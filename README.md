@@ -1,52 +1,112 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Newcastle sculpture
 
-Welcome USER_NAME,
+Cities and towns the world over are adorned with public sculpture. Much of the time it gets sadly little attention from passers-by. It’s worth stopping to take a look, though, because not only are there some wonderful artistic gems to enjoy, there’s lots to be learned about local history, and about an area’s people and communities. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+As far as I can tell, there are few websites devoted to an individual city or town’s sculpture (Lichfield’s The city of sculpture, http://www.thecityofsculpture.co.uk/ is a rare example), but I’ve often thought I’d like to be able quickly to find out about an individual city’s public art, and I think there’s enough in Newcastle-upon-Tyne for it to be worthwhile providing a guide for others. In the fullness of time such a guide could provide guided walks and could expand to Northumbria and other cities in the North East. For now, a Newcastle guide might be of interest to visitors and tourists, locals, culture vultures and local history geeks, and those looking for a walk on a Sunday afternoon.
 
-## Gitpod Reminders
+NOTE: Some of the photos are mine – I can only apologise for the bad quality – I’d never meant them to be anything other than a reminder for me.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# UX
 
-`python3 -m http.server`
+## User stories
+1. As a first time visitor, I would like to
+* easily understand the main purpose of the site and be reassured that I have found a site which may have what I am looking for
+* be able to easily navigate throughout the site to find content
+* find meaningful content, for instance, relevant information about Newcastle-upon-Tyne and its public art, with images, locations, and background information 
+* to find information that would enable me to physically visit the sculptures
+* join a mailing list and become part of a sculpture-loving community, if the site and its contents interest me, I might wish to
+* follow the social media links relevant art world and local interest news
 
-A blue button should appear to click: _Make Public_,
+2. As a returning visitor, having found something useful or interesting in the site, I would like to
+* find up to date information
+* plan further visits to sculpture
+* contribute information I have found about sculptures
 
-Another blue button should appear to click: _Open Browser_.
+## Strategy (user needs and business objectives)
+1. The website is created simply for the pleasure of sharing information and to reach out to and connect with people with similar interests, or who might have similar interests. There are no plans for the site to be commercial in any way, for instance, by attracting sponsorship or advertising from local businesses
+* The site must provide valuable information, in particular
+  * Accurate details of the sculptures – name, sculptor, date, etc
+  * Accurate location details, including details to plot them on Google Maps
+* The site should provide a way to keep people informed about sculpture – in the first instance, by a newsletter, so that it’s not just a directory or gazetteer, but has an authorial voice.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+2. The user stories above don’t rely on any particular demographic, but the tone of the site might appeal more to people with an existing interest in the arts or history. Included among users might be:
+* tourists and visitors to Newcastle who would like some guidance and advice
+* people interested in the visual arts, whether visiting Newcastle or resident
+* local people wanting to get to know the city better
+* people looking for an interesting way to spend some time in or near the city centre 
 
-A blue button should appear to click: _Make Public_,
+These different groups don’t necessarily need different information or functionality from the site.
 
-Another blue button should appear to click: _Open Browser_.
+## Scope (functional specifications and context requirements)
+1. As a start, the website needs to provide the basic information described above
+* Details of the sculptures
+* Locations of the sculptures
+* Photos of the sculptures
+* Newsletter sign up form
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+2. Aspects to save till later:
+* A separate page for each sculpture
+* A full listing of all sculptures
+* Suggested itineraries
+* A facility for users to contribute information
 
-To log into the Heroku toolbelt CLI you can use:
+## Structure (interaction and information design)
+1. The site has a simple structure, one layer deep. Users may arrive on the home page, from which they navigate via the navigation bar to the other pages. Any pages can be equally navigated to from any other page. As stated above, other pages might be created, but these would not be accessible from the top navigation. This is beyond the scope of this project.
+2. Home
+* Sculpture image (hero image)
+* Introductory text
+* Small sculpture image for variety and interest
 
-`heroku login -i`
+3. Location
+* Introductory text
+* Google Maps showing locations of sculptures
 
-If you have Multi-Factor Authentication (MFA) enabled then use the API key that was generated for you at [Heroku](https://dashboard.heroku.com/account) as your password.
-This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+4. Newsletter
+* Sculpture image
+* Introductory text
+* Newsletter sign up form
+* Information about the Newcastle Sculpture project
 
-## Updates Since The Instructional Video
+## Skeleton (interface, navigation, and information design)
+1. Wireframe mock-ups were developed on [Figma]( https://www.figma.com/file/XXX)
+* Note on original intentions and any changes 
+* Any other design developments or learning points about design
+* See wireframe at [Figma]( https://www.figma.com/file/ XXX)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+2. Colour scheme and imagery
+* The colour scheme is based on modern minimal art and culture design, to give serious feel to the sight (rather than a local information / local entertainment style site)
+* Any other points – eg, if a logo is designed, or a change to the name
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+3. Photographs
+* Some photographs are mine, but they were taken only to prompt my memory and not for this website. Other photos are acknowledged as appropriate on the site and in this README.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+4. Fonts
+* Two variable Google Fonts were chosen. Work Sans has a bold, industrial, urban feel for the main heading, while Dosis, used for the rest of the text, is clear, simple, and modern. Sans Serif is the fallback font in case the font isn't imported into the site correctly.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Surface (visual design)
+1. The header includes a simple logo, formed form the site’s initials NS. This serves also as a favicon. On larger screens there is a navigation bar, and on smaller screens a toggler icon leading to the navigation.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+2. The page body on all pages is a pale grey-green, chosen for its contemporary feel and because it sets off the sculpture colours well.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+3. On all screen sizes the footer contains social media icons. The deep green is essentially a darker version of the light green and closes the page without too much fuss.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+4. The Home page is presented as relatively uncluttered. A well known sculpture takes up somewhat over half a desktop screen, with empty space either side, and the full width of a mobile screen. Underneath is some simple introductory text and another sculpture image, chosen to contrast in subject with the main hero image.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+5. The Locations page is the filling of the website, so to speak, between the other two pages. Here is the map with the details of the sculptures on it. 
 
----
+6. The Newsletter page is very simple, with a sign up form [and a contact form?]. Underneath is a more colourful photo.
 
-Happy coding!
+# Features
+## Existing features
+1. Responsive on all devices
+2. The header contains a conventionally placed logo in the top left hand corner (with a link to send users to the home page). Navigation is in the top right of the page.
+3. The footer contains links to standard social networking sites Facebook Twitter, and Instagram
+4. Locations page
+* Google Maps API
+5. Newsletter page
+* Newsletter sign up
+* Contact form
+
+## Features left to implement
+1. More detailed listing of sculptures
+2. Possibility for users to upload comments and information
