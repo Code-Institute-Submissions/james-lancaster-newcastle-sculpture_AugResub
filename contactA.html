@@ -4,19 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newcastle sculpture</title>
+    <title>Contact Form Newcastle Sculptures</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
     (function() {
-        emailjs.init("user_eqeJnv53XLLmF9HgVofz6");
-    })();
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_eqeJnv53XLLmF9HgVofz6');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_i2fp6ip', 'contact_form_newcastlesc', '#myForm')
+                    .then(function(rnesponse) {
+                        console.log('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+                //    emailjs.sendForm('contact_service', 'contact_form_newcastlesc', this)
+                //    .then(function() {
+                //        console.log('SUCCESS!');
+                //    }, function(error) {
+                //       console.log('FAILED...', error);
+                //    });
+            });
+        }
     </script>
 </head>
 <body>
+    <!-- section: header-->
+    <header>
+        <!-- A Bootstrap navbar is the basis for the navigation here. -->
+        <nav class="navbar fixed-top menu-bar jaynav navbar-expand-lg navbar-light">            
+            <a class="navbar-brand" href="index.html">
+                <img src="/assets/images/jay.jpg" height="50" alt="jay">
+            </a>
+            <button class="navbar-toggler menu-burger-icon collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav"> 
+                <ul class="navbar-nav jnav-text ml-auto" id="menu-hover">
+                    <li class="nav-item mr-2 active">
+                        <a class="nav-link menu-item" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="location.html">About</a>
+                    </li>        
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="contact.html">Contact<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link menu-item" href="contactA.html">ContactA<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>     
+    </header>
     <!-- section: header-->
     <header>
         <!-- A Bootstrap navbar is the basis for the navigation here. -->
@@ -54,6 +106,7 @@
         <div class="row no-gutters bbb">
             <h1 class="ccc">Want to hear more about Newcastle's public art?</h1>
         </div>
+
         <!-- Contact form -->
         <div class="row contact-us">
             <div class="col-sm-8 mx-auto">
@@ -85,13 +138,16 @@
             </div>
         </div> 
     </section>
-
-    <!-- Footer-->
-    <footer>
-
-    </footer>
-
-    <script src="assets/js/sendEmail.js"></script>
-
+<!--
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form> -->
 </body>
 </html>
