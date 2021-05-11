@@ -43,31 +43,31 @@
             <h1>So, you think you know about Newcastle's sculptures?</h1>
         </div>
         <div>
-            <form id="quiz-form">
+            <form id="quiz-form" onsubmit="return" >
                 <div>
                     <h2>Which inventor and invention are commemorated here?</h2>
-                    <label for="var_string"><input type="radio" name="articulated" value="0" id="var-edison">Thomas Edison, inventor of the electric light bulb (or was it Swan?)</label><br>
-                    <label for="var_join"><input type="radio" name="articulated" value="1" id="var-swan">Joseph Swan, inventor of the electric light bulb (or was it Edison?)</label><br>
-                    <label for="var_info"><input type="radio" name="articulated" value="0" id="var-hopper">Grace Hopper, inventor of the first computer language compiler</label><br>
-                    <label for="var_condition"><input type="radio" name="articulated" value="0" id="var-bernerslee">Tim Berners-Lee, inventor of the World Wide Web</label>
+                    <label for="articulated-edison"><input type="radio" name="articulated" value="0" id="articulated-edison">Thomas Edison, inventor of the electric light bulb (or was it Swan?)</label><br>
+                    <label for="articulated-swan"><input type="radio" name="articulated" value="1" id="articulated-swan">Joseph Swan, inventor of the electric light bulb (or was it Edison?)</label><br>
+                    <label for="articulated-hopper"><input type="radio" name="articulated" value="0" id="articulated-hopper">Grace Hopper, inventor of the first computer language compiler</label><br>
+                    <label for="articulated-bernerslee"><input type="radio" name="articulated" value="0" id="articulated-bernerslee">Tim Berners-Lee, inventor of the World Wide Web</label>
         
                     <h2>Who is the sculptor of these figures?</h2>
-                    <label for="sub_string"><input type="radio" name="hume" value="1" id="hume-boonham">Nigel Boonhanm</label><br>
-                    <label for="sub_join"><input type="radio" name="hume" value="0" id="hume-hirst">Damien Hirst</label><br>
-                    <label for="sub_info"><input type="radio" name="hume" value="0" id="hume-hepworth">Barbara Hepworth</label><br>
-                    <label for="sub_condition"><input type="radio" name="hume" value="0" id="hume-john">William Goscombe John</label>
+                    <label for="hume-boonham"><input type="radio" name="hume" value="1" id="hume-boonham">Nigel Boonhanm</label><br>
+                    <label for="hume-hirst"><input type="radio" name="hume" value="0" id="hume-hirst">Damien Hirst</label><br>
+                    <label for="hume-hepworth"><input type="radio" name="hume" value="0" id="hume-hepworth">Barbara Hepworth</label><br>
+                    <label for="hume-john"><input type="radio" name="hume" value="0" id="hume-john">William Goscombe John</label>
         
                     <h2>Which river god is celebrated here?</h2>
-                    <label for="cat_string"><input type="radio" name="river" value="0" id="river-tweed">River Tweed</label><br>
-                    <label for="cat_join"><input type="radio" name="river" value="0" id="river-thames">River Thames</label><br>
-                    <label for="cat_info"><input type="radio" name="river" value="1" id="river-tyne">River Tyne</label><br>
-                    <label for="cat_condition"><input type="radio" name="river" value="0" id="river-trent">River Trent</label>
+                    <label for="river-tweed"><input type="radio" name="river" value="0" id="river-tweed">River Tweed</label><br>
+                    <label for="river-thames"><input type="radio" name="river" value="0" id="river-thames">River Thames</label><br>
+                    <label for="river-tyne"><input type="radio" name="river" value="1" id="river-tyne">River Tyne</label><br>
+                    <label for="river-trent"><input type="radio" name="river" value="0" id="river-trent">River Trent</label>
         
                     <h2>Who is he calling to?</h2>
-                    <label for="if_string"><input type="radio" name="god" value="0" id="god-elephant">Elephant</label><br>
-                    <label for="if_join"><input type="radio" name="god" value="0" id="god-pigeon">Man with pigeons</label><br>
-                    <label for="if_info"><input type="radio" name="god" value="0" id="god-shearer">Alan Shearer</label><br>
-                    <label for="if_condition"><input type="radio" name="god"  value="25" id="god-siren">Siren</label>
+                    <label for="god-elephant"><input type="radio" name="god" value="0" id="god-elephant">Elephant</label><br>
+                    <label for="god-pigeon"><input type="radio" name="god" value="0" id="god-pigeon">Man with pigeons</label><br>
+                    <label for="god-shearer"><input type="radio" name="god" value="0" id="god-shearer">Alan Shearer</label><br>
+                    <label for="god-siren"><input type="radio" name="god"  value="25" id="god-siren">Siren</label>
                 </div>
                 <div>
                     <button type="submit" value="Submit">Submit</button>
