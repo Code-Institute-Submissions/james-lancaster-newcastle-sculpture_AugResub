@@ -25,7 +25,7 @@
                         <a class="nav-link menu-item" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="location.html">About</a>
+                        <a class="nav-link menu-item" href="locations.html">Locations</a>
                     </li>        
                     <li class="nav-item mr-2">
                         <a class="nav-link menu-item" href="quiz.html">Quiz<span class="sr-only">(current)</span></a>
@@ -33,12 +33,86 @@
                     <li class="nav-item mr-2">
                         <a class="nav-link menu-item" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="contactA.html">ContactA<span class="sr-only"></span></a>
-                    </li>
                 </ul>
             </div>
         </nav>     
     </header>
+    <!-- section: quiz form-->
+    <section id="quiz-main">
+        <div id="header">
+            <h1>So, you think you know about Newcastle's sculptures?</h1>
+        </div>
+        <div>
+            <form id="quiz-form">
+                <div>
+                    <h2>Which inventor and invention are commemorated here?</h2>
+                    <label for="var_string"><input type="radio" name="articulated" value="0" id="var-edison">Thomas Edison, inventor of the electric light bulb (or was it Swan?)</label><br>
+                    <label for="var_join"><input type="radio" name="articulated" value="1" id="var-swan">Joseph Swan, inventor of the electric light bulb (or was it Edison?)</label><br>
+                    <label for="var_info"><input type="radio" name="articulated" value="0" id="var-hopper">Grace Hopper, inventor of the first computer language compiler</label><br>
+                    <label for="var_condition"><input type="radio" name="articulated" value="0" id="var-bernerslee">Tim Berners-Lee, inventor of the World Wide Web</label>
+        
+                    <h2>Who is the sculptor of these figures?</h2>
+                    <label for="sub_string"><input type="radio" name="hume" value="1" id="hume-boonham">Nigel Boonhanm</label><br>
+                    <label for="sub_join"><input type="radio" name="hume" value="0" id="hume-hirst">Damien Hirst</label><br>
+                    <label for="sub_info"><input type="radio" name="hume" value="0" id="hume-hepworth">Barbara Hepworth</label><br>
+                    <label for="sub_condition"><input type="radio" name="hume" value="0" id="hume-john">William Goscombe John</label>
+        
+                    <h2>Which river god is celebrated here?</h2>
+                    <label for="cat_string"><input type="radio" name="river" value="0" id="river-tweed">River Tweed</label><br>
+                    <label for="cat_join"><input type="radio" name="river" value="0" id="river-thames">River Thames</label><br>
+                    <label for="cat_info"><input type="radio" name="river" value="1" id="river-tyne">River Tyne</label><br>
+                    <label for="cat_condition"><input type="radio" name="river" value="0" id="river-trent">River Trent</label>
+        
+                    <h2>Who is he calling to?</h2>
+                    <label for="if_string"><input type="radio" name="god" value="0" id="god-elephant">Elephant</label><br>
+                    <label for="if_join"><input type="radio" name="god" value="0" id="god-pigeon">Man with pigeons</label><br>
+                    <label for="if_info"><input type="radio" name="god" value="0" id="god-shearer">Alan Shearer</label><br>
+                    <label for="if_condition"><input type="radio" name="god"  value="25" id="god-siren">Siren</label>
+                </div>
+                <div>
+                    <button type="submit" value="Submit">Submit</button>
+                </div>
+            </form>
+            <div>
+                <p>You scored: <span id="grade">__</span></p>
+                <p id="grade2"></p>
+            </div>  
+        </div>
+    </section>
+
+    <!-- section: footer -->
+    <footer class="container-fluid">
+        <div class="footer-details row"> 
+            <div class="col-6 mx-auto">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/?lang=en-gb">
+                            <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>                            
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.spotify.com/uk/">
+                            <i class="fa fa-spotify fa-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Spotify</span>
+                        </a>
+                    </li>                             
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.deezer.com/en/">
+                            <i class="fab fa-deezer fa-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Deezer</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://soundcloud.com/">
+                            <i class="fab fa-soundcloud fa-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Deezer</span>
+                        </a>
+                    </li>               
+                </ul>
+            </div>            
+        </div>          
+    </footer>
+    <script src="assets/js/quiz.js"></script>
 </body>
 </html>

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newcastle sculpture</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
     <script type="text/javascript">
-    (function() {
-        emailjs.init("user_eqeJnv53XLLmF9HgVofz6");
-    })();
+        (function() {
+            emailjs.init("user_eqeJnv53XLLmF9HgVofz6");
+        })();
     </script>
 </head>
+
 <body>
     <!-- section: header-->
     <header>
@@ -33,7 +33,7 @@
                         <a class="nav-link menu-item" href="index.html">Home</a>
                     </li>
                     <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="location.html">About</a>
+                        <a class="nav-link menu-item" href="locations.html">Locations</a>
                     </li>        
                     <li class="nav-item mr-2">
                         <a class="nav-link menu-item" href="quiz.html">Quiz</a>
@@ -41,57 +41,61 @@
                     <li class="nav-item mr-2">
                         <a class="nav-link menu-item" href="contact.html">Contact<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="contactA.html">ContactA<span class="sr-only"></span></a>
-                    </li>
                 </ul>
             </div>
         </nav>     
     </header>
 
-    <!-- section: contact us heading -->
-    <section class="container-fluid aaa">
-        <div class="row no-gutters bbb">
-            <h1 class="ccc">Want to hear more about Newcastle's public art?</h1>
-        </div>
-        <!-- Contact form -->
-        <div class="row contact-us">
-            <div class="col-sm-8 mx-auto">
-                <form onsubmit="return sendMail(this);" method="POST">
-                    <div class="form-group row">
-                        <div class="col">
-                            <textarea class="form-control" id="form-name" rows="1" placeholder="Your name"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col">
-                            <input type="email" class="form-control" id="form-email" placeholder="name@example.com">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col">
-                            <textarea class="form-control" id="form-text" rows="3" placeholder="Your message"></textarea>
-                        </div>
-                    </div>                    
-                        <input type="submit" value="Submit" class="sign-up-btn sign-up-btn-hover" id="btn-sm-screen"
-                             data-toggle="modal" data-target="#formModal">
+    <section class="container-fluid ">
+        <div class="row home-recordings-section">
+            <div>
+                <h3 class="leading-text uppercase text-center">Join the discussion about sculpture in Newcastle</h3>
+                <h5 class="jay-quote uppercase text-center">Sign up to get involved with other sculpture lovers!</h5>
+            </div>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="messagetext" class="form-control" id="messagetext" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
                 </form>
             </div>
-            <div class="col-8 mx-auto">
-                <div class="ddd">
-                    <p>Newcastle Sculpture</p>
-                    <p>45 Adderstone Crescent, Newcastle upon Tyne. NE2 2HS</p>
-                </div>
-            </div>
-        </div> 
+        </div>
     </section>
-
-    <!-- Footer-->
-    <footer>
-
+    <!-- section: footer -->
+    <footer class="container-fluid">
+        <div class="footer-details row"> 
+            <div class="col-6 mx-auto">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/?lang=en-gb">
+                            <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>                            
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.spotify.com/uk/">
+                            <i class="fa fa-spotify fa-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Spotify</span>
+                        </a>
+                    </li>                             
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.deezer.com/en/">
+                            <i class="fab fa-deezer fa-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Deezer</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://soundcloud.com/">
+                            <i class="fab fa-soundcloud fa-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Deezer</span>
+                        </a>
+                    </li>               
+                </ul>
+            </div>            
+        </div>          
     </footer>
-
     <script src="assets/js/sendEmail.js"></script>
-
 </body>
+
 </html>
