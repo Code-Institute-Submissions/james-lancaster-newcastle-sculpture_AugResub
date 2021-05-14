@@ -32,196 +32,12 @@ font-family: 'Lato', sans-serif; */
     color: #43257F;
     text-align: center;
 }
-.col-pa {
-    padding-left: 30px;
-    padding-top: 5px;
-}
-
-.album-quote {
-    margin-top: 15px;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    color: #253B46;
-    
-}
-
-.album-text {
-    margin-top: 15px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000000;    
-    padding: 0px;
-}
-
-.italic {
-    font-style: italic;
-}
 
 /* ---------- Colours ---------- */
 
-.bg-color-tiffany {
-    background-color: #f3f3ee;
-    margin-bottom: 0;
-    padding-bottom: 5px;
-}
-
-.bg-color-videos {
-    background-color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
 /* ---------- Images, photos, videos ---------- */
 
-.ptg-tiffany {
-    background: url("../images/tiffany.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    min-height: 527px;
-}
-
-.photo-baby {    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
-}
-
-.alpha {
-    background: url(../images/alpha-icon.png);
-}
-
-.unravelling-bolero {
-    background: url("../images/unravelling-bolero-ptg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    min-height: 527px;    
-}
-
-/* This code from StackOverflow to deal with obsolete iframe borderframes in YouTube */
-.iframe{
-    border-width: 0px;
-}
-
-/* This code taken from https://flaviocopes.com/responsive-youtube-videos/ */
-.video-container {
-    overflow: hidden;
-    position: relative;
-    width:100%;
-    padding-top: 50%;
-    display: block;
-    margin-bottom: 30px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.jaysq-photo-03 {
-    background: url("../images/jaysq-photo-03.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    min-height: 527px;
-    }
-
-.jaysq-photo-02 {
-    background: url("../images/jaysq-photo-02.jpg");
-    opacity: 0.9;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    min-height: 527px;
-}
-
-.tiffany-painting {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-}
-
 /* ---------- Padding, margins, backgrounds, etc ----------*/
-
-.jay-top-01 {
-    padding-top: 65px;
-}
-
-.jay-top-02 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    }
-
-@media screen and (min-width: 600px) {
-    .jsq-photo-01 {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-}
-
-#sales-icons {
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-.sorolla-tiffany {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.jay-videos {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 15px;
-}
-
-.about-videos {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 10px;      
-}
-.contact-us {
-    text-align: center;
-    margin-left: 20px;
-    padding-left: 20px;
- }
-
-.col-space {
-    margin: 30px;
-  }
-
-.about-block {
-    margin-bottom: 20px;
-    display: block;
-    clear: both;
-}
-
-hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid rgba(0,0,0,.1);
-    box-sizing: content-box;
-    height: 0;
-    overflow-x: visible;
-    overflow-y: visible;
-}
 
 .home-recordings-section {
     padding-top: 20px;
@@ -232,29 +48,10 @@ hr {
 /* ---------- Media queries ---------- */
 
 @media screen and (min-width: 600px) {
-    .jsq-photo-01 {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (min-width: 600px) {
     .leading-text {
         max-width: 60%;
         margin: 0 auto;
             }
-}
-@media screen and (min-width: 600px) {
-    .font-quotes_01 {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 767px) {
-    .visible-xs {
-    display: block;
-    }
 }
 
 /* ---------- Header ---------- */
@@ -296,27 +93,4 @@ footer {
     /* background: #43257F; */
 }
 
-.footer-details {
-    background-color: #E3B723;
-    }
-
 /* ---------- Calendar ---------- */
-
-#portfolio-work {
-    overflow: hidden;
-    padding: 80px 0;
-}
-
-.visible-xs {
-    display: none;
-}
-
-.table-responsive {
-    min-height: .01%;
-    overflow-x: auto;
-}
-
-.calendar-style {
-    display: flex;
-    align-items: center;
-}
