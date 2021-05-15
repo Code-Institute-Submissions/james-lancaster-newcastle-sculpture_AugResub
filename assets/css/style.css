@@ -93,4 +93,111 @@ footer {
     /* background: #43257F; */
 }
 
-/* ---------- Calendar ---------- */
+/* ------------------------- PAGE: INDEX----- */
+
+/* ------------------------- PAGE: LOCATION ----- */
+
+/* ------------------------- PAGE: QUIZ ----- */
+/* ------------------------- quiz: flexbox ----- */
+.container-quiz-04{
+    display: flex;
+    max-height: 360px;
+}
+
+.left-quiz {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-quiz {
+    flex: 1;
+    display: flex;    
+}
+
+.left-quiz-a {
+    flex: 1;
+}
+
+.left-quiz-b {
+    flex: 1;
+}
+
+.left-quiz-c {
+    flex: 1;
+}
+
+.left-quiz-d {
+    flex: 1;
+}
+
+/* ------------------------- quiz: layout ----- */
+.box-q01 {
+    margin: 100px;
+}
+
+.box-q02 {
+    margin: 50px;
+}
+
+.img-q02 {
+    padding-right: 10px;
+}
+
+/* ------------------------- quiz: images ----- */
+.img-q01 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 360px;
+}
+
+.img-q02 {
+    background-size: contain;
+    height: 150px;
+    max-width: 200px;
+}
+
+.img-q03 {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.img-q04 {
+max-width: 60%;
+height: auto;
+}
+
+/* ------------------------- quiz: buttons ----- */
+.btn-q {
+    color: #000000;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    text-align: left;
+}
+.btn-q:hover{
+    color: #a3a0a0;
+    background-color: #3a0949;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.box-q {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #310949
+}
+
+/* ------------------------- quiz: text ----- */
+.txt-q01 {
+    text-transform: uppercase;
+}
+
+/* ------------------------- PAGE: CONTACT ----- */

@@ -1,4 +1,4 @@
-document.getElementById("quiz-form").onsubmit=function(){
+/* document.getElementById("quiz-form").onsubmit=function(){
        articulated = parseInt(document.querySelector('input[name = "articulated"]:checked').value),
 	   hume = parseInt(document.querySelector('input[name = "hume"]:checked').value),
 	   river = parseInt(document.querySelector('input[name = "river"]:checked').value),
@@ -10,3 +10,4 @@ document.getElementById("quiz-form").onsubmit=function(){
 
 return false;
 };
+*/
