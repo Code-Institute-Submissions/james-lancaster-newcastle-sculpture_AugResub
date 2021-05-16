@@ -1,13 +1,10 @@
-/* document.getElementById("quiz-form").onsubmit=function(){
-       articulated = parseInt(document.querySelector('input[name = "articulated"]:checked').value),
-	   hume = parseInt(document.querySelector('input[name = "hume"]:checked').value),
-	   river = parseInt(document.querySelector('input[name = "river"]:checked').value),
-	   god = parseInt(document.querySelector('input[name = "god"]:checked').value),
-	   	   
-	   result = (articulated + hume + river + god),
-	   
-	document.getElementById("grade").innerHTML = result
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+    
+});
 
-return false;
-};
-*/
+function imageQ04 (){
+    let openImage = 
+    document.getElementById('hill-black').src=pic.replace('100x100');
+    document.getElementById("hill-black").style.visibility="visible";
+}
