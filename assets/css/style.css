@@ -99,7 +99,7 @@ footer {
 /* ------------------------- PAGE: LOCATION ----- */
 
 /* ------------------------- PAGE: QUIZ ----- */
-/* ------------------------- quiz: flexbox ----- */
+/* ------------------------- quiz: flexbox; NO LONGER REQUIRED IF NEW GRID LAYOUT WORKS AS EXPECTED ----- */
 .container-quiz-04{
     display: flex;
     max-height: 360px;
@@ -172,7 +172,19 @@ max-width: 60%;
 height: auto;
 }
 
-/* ------------------------- quiz: buttons ----- */
+/* ------------------------- NOT FORMATTED YET ----- */
+.hill-rhino-img {
+    background: url("../images/hill-black-rhinoceros.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+/* ------------------------- quiz: buttons: STILL TEMPORARY FORMATTING----- */
 .btn-q {
     color: #000000;
     background-color: #ffffff;
@@ -204,10 +216,18 @@ height: auto;
 /* ------------------------- PAGE: CONTACT ----- */
 
 
-/*LOCATION TEST */
+/* ------------------------- LOCATION TEST: COPIED & NOT MODIFIED AT ALL YET. MUST BE CHANGED - NOT INTERESTING ----- */
 
-            /* The Modal (background) */
-.modal {
+.hill-rhino-img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .hill-rhino-img:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -218,29 +238,58 @@ height: auto;
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-            
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-image {
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    display: block;
     width: 80%;
-}
-              
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
+    max-width: 700px;
+  }
+  
+/* Add Animation */
+.modal-image {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
     font-weight: bold;
-}
-              
-.close:hover,
-.close:focus {
-    color: #000;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
     text-decoration: none;
     cursor: pointer;
-}
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-image {
+      width: 100%;
+    }
+  }
+  
+    
