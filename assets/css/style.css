@@ -2,86 +2,90 @@
 font-family: 'Lato', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-/* ---------- Fonts & text ----------*/
-
-.jnav-text {
+/* ------------------------- Fonts & text ----- */
+.ns-he-02 {
     color: #43257F;
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.header-text {
-    color: #748795;
-}
-
-.leading-text {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 35px;
-    color: #43257F;
-    font-weight: 700;
-    padding-top: 30px;
-    text-align: center;
-}
-
-.jay-quote {
-    margin-top: 15px;
-    margin-bottom: 30px;
+.ns-hg-06-ft {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 60px;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #43257F;
-    text-align: center;
-}
-
-/* ---------- Colours ---------- */
-
-/* ---------- Images, photos, videos ---------- */
-
-/* ---------- Padding, margins, backgrounds, etc ----------*/
-
-.home-recordings-section {
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: left;
 }
 
-/* ---------- Media queries ---------- */
-
-@media screen and (min-width: 600px) {
-    .leading-text {
-        max-width: 60%;
-        margin: 0 auto;
-            }
+.ns-hg-08-ft {
+    font-family: 'Lato', sans serif;
+    font-size: 30px;
+    color: #F1E086;
+    padding-left: 15px;
 }
 
-/* ---------- Header ---------- */
+/* ------------------------- Padding, margins, backgrounds, etc ----- */
+.ns-cb-01 {
+    background-color: #BD0B0B;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; 
+    margin-bottom: 0;
+}
 
-.logo {
+.ns-hg-02 {
+    padding-top: 2px;
+}
+
+.ns-hg-05 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ns-hg-09 {
+    background-color: #EBC1CC;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* To keep the heading font proportional to the screen size 
+(necessary because the font is so large): 
+BootstrapCreative, How to change the Bootstrap text size and make the font size responsive, 19 Apr 2021. 
+https://bootstrapcreative.com/can-adjust-text-size-bootstrap-responsive-design/
+.text-responsive {
+    font-size: calc(100% + 3vw + 3vh);
+  }
+*/
+/* ------------------------- Header ----- */
+/* Hide the X-close when the menu burger is shown - CSS taken from 
+Bootstrap 4 Hamburger https://www.codeply.com/p/sW0Dx7GUNr/bootstrap-hamburger-X, 
+accessed via Stack Overflow https://stackoverflow.com/questions/28247310/bootstrap-mobile-menu-icon-change-to-x-close */
+
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+}
+
+/**/
+.ns-he-03-logo {
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.jaynav {
-    opacity: 1.0;
+.ns-he-01 {
+    opacity: 0.8;
     background-color: #ffffff; 
 }
 
-/* ---------- Footer ---------- */
-
-footer {
-    background-color: #E3B723;
-    color: #43257F;
-    height: 0px;
-    margin: 0;
-}
-
-.social-links {
-    padding-bottom: 15px;
-    text-align: center;
-}
-
+/* ------------------------- Footer ----- */
 .fa-icon {
     width: 35px;
     height: 35px;
@@ -90,51 +94,59 @@ footer {
     font-size: 25px;
     line-height: 15px;
     text-align: center;
-    color: #43257F;
+    color: #000000;
     /* background: #43257F; */
 }
 
+footer {
+    background-color: #407472;
+    color: #000000;
+    height: 0px;
+    margin: 0;
+}
+
+.ns-fo-01 {
+    background-color: #407472;
+}
+
+.social-links {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 /* ------------------------- PAGE: INDEX----- */
+.col-md-auto.nshg10 {
+    padding: 0;
+}
+
+.ns-hg-01-ft {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 65px;
+    color: black;
+    font-weight: 900;
+    padding-top: 30px;
+    margin-top: 50px;    
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#ns-hg-07-ph {
+    padding-left: 0;
+    padding-right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /* ------------------------- PAGE: LOCATION ----- */
 
 /* ------------------------- PAGE: QUIZ ----- */
-/* ------------------------- quiz: flexbox; NO LONGER REQUIRED IF NEW GRID LAYOUT WORKS AS EXPECTED ----- */
-.container-quiz-04{
-    display: flex;
-    max-height: 360px;
-}
-
-.left-quiz {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.right-quiz {
-    flex: 1;
-    display: flex;    
-}
-
-.left-quiz-a {
-    flex: 1;
-}
-
-.left-quiz-b {
-    flex: 1;
-}
-
-.left-quiz-c {
-    flex: 1;
-}
-
-.left-quiz-d {
-    flex: 1;
-}
-
 /* ------------------------- quiz: layout ----- */
 .box-q01 {
-    margin: 100px;
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 5px;
 }
 
 .box-q02 {
@@ -145,7 +157,22 @@ footer {
     padding-right: 10px;
 }
 
+.q04-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
 /* ------------------------- quiz: images ----- */
+.img-responsive-q01 {
+    max-width: 100%;
+}
+
+.img-fluid-q01 {
+    max-width: 100%;
+}
+
 .img-q01 {
     background-position: center;
     background-repeat: no-repeat;
@@ -172,26 +199,15 @@ max-width: 60%;
 height: auto;
 }
 
-/* ------------------------- NOT FORMATTED YET ----- */
-.hill-rhino-img {
-    background: url("../images/hill-black-rhinoceros.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
-
-/* ------------------------- quiz: buttons: STILL TEMPORARY FORMATTING----- */
+/* ------------------------- quiz: buttons: ----- */
 .btn-q {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #ecdfeb;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     text-align: left;
+    border-radius: 4px;
 }
 .btn-q:hover{
     color: #a3a0a0;
@@ -201,11 +217,17 @@ height: auto;
     -webkit-transition: all .5s ease-in-out;
 }
 
-.box-q {
+.box-q02 {
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 3px solid #310949
+}
+
+.q04-btn-col {
+    color: #a3a0a0;
+    background-color: #3a0949;
+    
 }
 
 /* ------------------------- quiz: text ----- */
@@ -214,82 +236,12 @@ height: auto;
 }
 
 /* ------------------------- PAGE: CONTACT ----- */
+#ns-cc-01 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
 
-
-/* ------------------------- LOCATION TEST: COPIED & NOT MODIFIED AT ALL YET. MUST BE CHANGED - NOT INTERESTING ----- */
-
-.hill-rhino-img {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .hill-rhino-img:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-image {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-/* Add Animation */
-.modal-image {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-image {
-      width: 100%;
-    }
-  }
-  
-    
+#ns-cc-02 {
+    background-color: #407472; 
+}

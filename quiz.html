@@ -4,225 +4,405 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://james-lancaster.github.io/newcastle-sculptures/favicon.png">
     <title>Quiz</title>
-    <!-- Add Bootstrap 5.0.0, including JS bundle -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="assets/js/jquery-01.js"></script> -->
+    <script src="https://kit.fontawesome.com/a32fb896d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<!-- section: header -->
-<!-- A Bootstrap navbar is the basis for the navigation here. -->
-    <header>
-        <nav class="navbar fixed-top menu-bar jaynav navbar-expand-lg navbar-light">            
-            <a class="navbar-brand" href="index.html">
-                <img src="/assets/images/jay.jpg" height="50" alt="jay">
-            </a>
-            <button class="navbar-toggler menu-burger-icon collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarNav"> 
-                <ul class="navbar-nav jnav-text ml-auto" id="menu-hover">
-                    <li class="nav-item mr-2 active">
-                        <a class="nav-link menu-item" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="location.html">Locations</a>
-                    </li>        
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="quiz.html">Quiz<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link menu-item" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+<!-- section: header-->
+<header>
+    <nav class="navbar fixed-top menu-bar ns-he-01 navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img src=/assets/images/river-god-logo.jpg height="50" alt="Logo - the river god"></a>
+        <button class="navbar-toggler menu-burger-icon collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <div class="close-icon"><i class="fas fa-times"></i></div>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+            <ul class="navbar-nav ns-he-02 ml-auto" id="menu-hover">
+                <li class="nav-item mr-2 active">
+                    <a class="nav-link menu-item" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link menu-item" href="locations.html">Locations</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link menu-item" href="quiz.html">Quiz<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link menu-item" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <section>
+<!-- heading -->
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-md">
+                    <h1 class="text-responsive ns-hg-01-ft">Newcastle sculptures</h1>
+                </div>
             </div>
-        </nav>     
-    </header>
-
+        </div>
+    </section>
 <!-- section: quiz form -->
     <section class="container-fluid box-q01">
         <div>
-            <h2>So, what do you reckon you know about Newcastle sculpture?</h2>
+            <h2>So, what do you know about Newcastle sculpture?</h2>
         </div>
+<!--    Question 1 question-->
         <div id="question-one" class="box-q02">
             <div class="row">
+                <h5 class="txt-q01">Question 1: Which inventor and invention does this commemorate?</h5>
+            </div>
+            <div class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="assets/images/arnatt-articulated-opposites.jpg" class="img-q01">
+                    <img src="assets/images/arnatt-articulated-opposites.jpg"  alt="Raymond Arnatt, Articulated Opposites" class="img-q01 img-responsive-q01 img-fluid-q01">
                 </div>
                 <div class="col-12 col-lg-6">
                     <div>
-                        <h5 class="txt-q01">Question 1: Which inventor and invention does this commemorate?</h5>
-                    </div>
-                    <div>
-                        <p><button class="btn-q">Thomas Edison, inventor of the electric light bulb (or was it Swan?)</button></p>
-                        <p><button class="btn-q">Joseph Swan, inventor of the electric light bulb (or was it Edison?)</button></p>
-                        <p><button class="btn-q">Gladstone Adams of Whitley Bay, (locally claimed) inventor of the windscreen wiper</button></p>
-                        <p><button class="btn-q">Mary Anderson of Birmingham, Alabama, inventor of the windscreen wiper</button></p>
+                        <p><button class="btn-q btnQ1 incorrect">Thomas Edison, inventor of the electric light bulb (or was it Swan?)</button></p>
+                        <p><button class="btn-q btnQ1 correct">Joseph Swan, inventor of the electric light bulb (or was it Edison?)</button></p>
+                        <p><button class="btn-q btnQ1 incorrect">Gladstone Adams of Whitley Bay, (locally claimed) inventor of the windscreen wiper</button></p>
+                        <p><button class="btn-q btnQ1 incorrect">Mary Anderson of Birmingham, Alabama, inventor of the windscreen wiper</button></p>
                     </div>
                 </div>                              
             </div>
         </div>
+<!--    Question 2 question-->
         <div id="question-two" class="box-q02">
             <div class="row">
-                <div class="col-12 col-lg-3 order-1 order-sm-2">
-                    <img src="assets/images/boonham-hume.jpg" class="img-q01">
+                <h5 class="txt-q01">Question 2: Who is the sculptor of these figures?</h5>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-3 order-1 order-lg-2">
+                    <img src="assets/images/boonham-hume.jpg" alt="Nigel Boonham, Cardinal Basil Hume" class="img-q01">
                 </div>
-                <div class="col-12 col-lg-3 order-2 order-sm-3">
-                    <img src="assets/images/boonham-king.jpg" class="img-q01">
-                </div>
-                <div class="col-12 col-lg-6 order-3 order-sm-1">                            
-                <div>
-                    <h5 class="txt-q01">Question 2: Who is the sculptor of these figures?</h5>
-                </div>
-                <div>
-                    <p><button class="btn-q">Nigel Boonham</button></p>
-                    <p><button class="btn-q">Damien Hirst</button></p>
-                    <p><button class="btn-q">Barbara Hepworth</button></p>
-                    <p><button class="btn-q">William Goscombe John</button></p>
+                <div class="col-12 col-lg-3 order-2 order-lg-3">
+                    <img src="assets/images/boonham-king.jpg" alt="Nigel Boonham, Martin Luther King" class="img-q01">
+                </div>                           
+                <div class="col-12 col-lg-6 order-3 order-lg-1">
+                    <p><button class="btn-q btnQ2 correct">Nigel Boonham</button></p>
+                    <p><button class="btn-q btnQ2 incorrect">Damien Hirst</button></p>
+                    <p><button class="btn-q btnQ2 incorrect">Barbara Hepworth</button></p>
+                    <p><button class="btn-q btnQ2 incorrect">William Goscombe John</button></p>
                 </div>
             </div>
         </div>
+<!--    Question 3 question-->
         <div id="question-three" class="box-q02">
             <div class="row">
+                <h5 class="txt-q01">Which river god is celebrated here?</h5>
+            </div>
+            <div class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="assets/images/wynne-river-god-tyne.jpg" class="img-q01">
+                    <img src="assets/images/wynne-river-god-tyne.jpg" alt="David Wynne, River God Tyne" class="img-q01">
                 </div>
                 <div class="col-12 col-lg-6">
+                   
                     <div>
-                        <h5 class="txt-q01">Which river god is celebrated here?</h5>
-                    </div>
-                    <div>
-                        <p><button class="btn-q">River Tweed</button></p>
-                        <p><button class="btn-q">River Thames</button></p>
-                        <p><button class="btn-q">River Tyne</button></p>
-                        <p><button class="btn-q">River Trent</button></p>
+                        <p><button class="btn-q btnQ3 incorrect">River Tweed</button></p>
+                        <p><button class="btn-q btnQ3 incorrect">River Thames</button></p>
+                        <p><button class="btn-q btnQ3 correct">River Tyne</button></p>
+                        <p><button class="btn-q btnQ3 incorrect">River Trent</button></p>
                     </div>
                 </div>
             </div>
         </div>
+<!--    Question 4 question-->
         <div id="question-four" class="box-q02">
             <div class="row">
-                <div class="col-12 col-lg-6 order-1 order-sm-2">
-                    <img src="assets/images/wallace-river-god.jpg" class="img-q01">
+                <h5 class="txt-q01">And who is <em>this</em> river god calling to?</h5>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="assets/images/wallace-river-god.jpg" alt="Andre Wallace, River God" class="img-q01">
                 </div>
-                <div class="col-12 col-lg-6 order-2 order-sm-1"></div>
-                    <div>
-                        <h5 class="txt-q01">And who is <em>this</em> river god calling to?</h5>
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="container">
+                        <div class="row align-items-start q04-row">
+                            <div class="col">
+                                <button class="Button btn-q btnQ4 btn-qa incorrect"><span class="Button-wrapper"><span>Christine Hill, Black rhinoceros</span></span></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm01" data-toggle="modal01" data-target="#quizModal01">View sculpture</button>
+                            </div>
+                        </div>
+                        <div class="row align-items-start q04-row">
+                            <div class="col">
+                                <button class="Button btn-q btnQ4 btn-qa incorrect"><span class="Button-wrapper"><span>Andre Wallace, Man with pigeons</span></span></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm02" data-toggle="modal02" data-target="#quizModal02">View sculpture</button>
+                            </div>
+                        </div>
+                        <div class="row align-items-start q04-row">
+                            <div class="col">
+                                <button class="Button btn-q btnQ4 btn-qa incorrect"><span class="Button-wrapper"><span>Tom Maley, Alan Shearer</span></span></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm03" data-toggle="modal03" data-target="#quizModal03">View sculpture</button>
+                            </div>
+                        </div>   
+                        <div class="row align-items-start q04-row">
+                            <div class="col">
+                                <button class="Button btn-q btnQ4 btn-qa correct"><span class="Button-wrapper"><span>Andre Wallace, Siren</span></span></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm04" data-toggle="modal04" data-target="#quizModal04">View sculpture</button>
+                            </div>
+                        </div>                        
                     </div>
-                    <div>
-                        <p><button class="btn-q">Christine Hill, Black rhinoceros</button>
-                            <button data-type="btnQ4" class="btnQ4v modQ4" id="hill-rhino-img">View</button></p>
-                        <p><button class="btn-q">Andre Wallace, Man with pigeons</button>
-                            <button data-type="btnQ4" class="btnQ4v">View</button></p>
-                        <p><button class="btn-q">Tom Maley, Alan Shearer</button>
-                            <button data-type="btnQ4" class="btnQ4v">View</button></p>
-                        <p><button class="btn-q">Andre Wallace, Siren</button>
-                            <button data-type="btnQ4" class="btnQ4v">View</button></p>
+<!-- Question 4 question modals-->
+                    <div class="modal fade" id="quizModal01" tabindex="-1"  aria-labelledby="quizModal01Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="quizModal01Label">
+                                        <img src="assets/images/hill-black-rhinoceros_1024_a.jpg" alt="Christine Hill, Black rhinoceros" class="img-responsive" width="400">
+                                        <h5 class="modal-title ModalLabel">Christine Hill, Black rhinoceros</h5>
+                                    </div>   
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="myModImg" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-image" id="imgQ4m">
-                    </div>                                      
-                </div>     
+                    <div class="modal fade" id="quizModal02" tabindex="-1" aria-labelledby="quizModal02Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="quizModal02Label">
+                                        <img src="assets/images/wallace-man-pigeons.jpg" alt="Andre Wallace, Man with pigeons" class="img-responsive" width="400">
+                                        <h5 class="modal-title ModalLabel">Andr&eacute; Wallace, Man with pigeons</h5>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                
+                    <div class="modal fade" id="quizModal03" tabindex="-1" aria-labelledby="quizModal03Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="quizModal03Label">
+                                        <img src="assets/images/maley-shearer_1024_a.jpg" alt="Tom Maley, Alan Shearer" class="img-responsive" width="400">
+                                        <h5 class="modal-title ModalLabel">Tom Maley, Alan Shearer</h5>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="modal fade" id="quizModal04" tabindex="-1" aria-labelledby="quizModal04Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title" id="quizModal04Label">
+                                        <img src="assets/images/wallace-siren_1024.jpg" alt="Andre Wallace, Siren`"  class="img-responsive" width="400">
+                                        <h5 class="modal-title ModalLabel">Andr&eacute; Wallace, Siren</h5>
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-<!--
-        <img src="assets/images/hill-black-rhinoceros_1024_a.jpg" class="img-q04">
-        <img src="assets/images/wallace-man-pigeons.jpg" class="img-q04">
-        <img src="assets/images/maley-shearer_1024.jpg" class="img-q04">
-        <img src="assets/images/wallace-siren_1024.jpg" class="img-q04">
--->
-<!--
-        <div id="question-four">
-            <div class="container-quiz-04">
-                <div class="left-quiz">
-                    <div class="left-quiz-a">
-                        <div class="col-12">
-                            <h5 class="txt-q01">And who is <em>this</em> river god calling to?</h5>
+<!--    Quiz answers modals -->
+<!--        Question 1 answer modal -->
+        <div class="modal fade" id="q1Correct" tabindex="-1" aria-labelledby="q1CorrectLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="q1CorrectLabel">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div>
-                            <img src="assets/images/hill-black-rhinoceros_1024_a.jpg" class="img-q04">
+                        <div class="modal-body">
+                            <p>Spot on! But why you'd put a fine statue like Raymond Arnatt’s Articulated Opposites (1969) in the middle of a traffic roundabout is another matter. But despite that, it has an optimistic 60s feel</p>
                         </div>
-                        <br>
-                        <div>
-                            <p><button class="btn-q">Christine Hill, Black rhinoceros</button></p>
-                        </div>
-                    </div>
-                    <div class="left-quiz-b ">
-                        <div>
-                            <img src="assets/images/wallace-man-pigeons.jpg" class="img-q04">
-                        </div>
-                        <br>
-                        <div>
-                            <p><button class="btn-q">Andre Wallace, Man with pigeons</button></p>
-                        </div>
-                    </div>
-                    <div class="left-quiz-c">
-                        <div>
-                            <img src="assets/images/maley-shearer_1024.jpg" class="img-q04">
-                        </div>
-                        <br>
-                        <div>
-                            <p><button class="btn-q">Tom Maley, Alan Shearer</button></p>
-                        </div>
-                    </div>
-                    <div class="left-quiz-d">
-                        <div>
-                            <img src="assets/images/wallace-siren_1024.jpg" class="img-q04">
-                        </div>
-                        <br>
-                        <div>
-                            <p><button class="btn-q">Andre Wallace, Siren</button></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-quiz">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <img src="assets/images/wallace-river-god.jpg" class="img-q01">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
- 
-    <!-- section: footer -->
-    <footer class="container-fluid">
-        <div class="footer-details row"> 
-            <div class="col-6 mx-auto">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://twitter.com/?lang=en-gb">
-                            <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>                            
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.spotify.com/uk/">
-                            <i class="fa fa-spotify fa-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Spotify</span>
-                        </a>
-                    </li>                             
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.deezer.com/en/">
-                            <i class="fab fa-deezer fa-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Deezer</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://soundcloud.com/">
-                            <i class="fab fa-soundcloud fa-icon" aria-hidden="true"></i>
-                            <span class="sr-only">Deezer</span>
-                        </a>
-                    </li>               
-                </ul>
-            </div>            
-        </div>          
-    </footer>
+        </div>      
+        <div class="modal fade" id="q1Incorrect" tabindex="-1" aria-labelledby="q1IncorrectLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="q1IncorrectLabel">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <p>Interesting choice, but wrong. Raymond Arnatt’s Articulated Opposites (1969) commemorates Swan’s lightbulb moment. To an objective bystander in Newcastle, Swan definitely beat Edison to it - he came up with the patent before Edison.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        Question 2 answer modal -->
+        <div class="modal fade" id="q2Correct" tabindex="-1" aria-labelledby="q2CorrectLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="q2CorrectLabel">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Nice one! Did you actually know that, or were you guessing? The Basil Hume is, I think a more interesting sculpture than the Martin Luther King.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+<div class="modal fade" id="q2Incorrect" tabindex="-1" aria-labelledby="q2IncorrectLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="q2IncorrectLabel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>No, not even close. Nigel Boonham's Cardinal Basil Hume at the Cathedral is in a wonderful setting, but poor old Martin Luther King is hidden away at Newcastle University.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--        Question 3 answer modal -->
+<div class="modal fade" id="q3Correct" tabindex="-1" aria-labelledby="q3CorrectLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="q3CorrectLabel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Congratulations, I'm pleased for you. The Tyne god is a pretty impressive figure, isn't he, although his arm looks dislocated.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>      
+<div class="modal fade" id="q3Incorrect" tabindex="-1" aria-labelledby="q3IncorrectLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="q3IncorrectLabel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Hmmm, geography's not your strong point, is it - it's Newcastle-UPON-TYNE. But you were distracted by the excellence of the sculpture.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--        Question 4 answer modal -->
+<div class="modal fade" id="q4Correct" tabindex="-1" aria-labelledby="q4CorrectLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="q4CorrectLabel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Well done! André Wallace's statues are on the Quayside near Millenium Bridge.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>      
+<div class="modal fade" id="q4Incorrect" tabindex="-1" aria-labelledby="q4IncorrectLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="q4IncorrectLabel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Never mind, it would be nice if it was true. He's actually calling to his nearby companion siren.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+<!-- section: footer -->
+<footer class="container-fluid">
+    <div class="row ns-fo-01"> 
+        <div class="col-6 mx-auto">
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://twitter.com/?lang=en-gb">
+                        <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>                            
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.pinterest.co.uk/">
+                        <i class="fa fa-pinterest fa-icon" aria-hidden="true"></i>
+                        <span class="sr-only">Pinterest</span>
+                    </a>
+                </li>                             
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="fa fa-instagram fa-icon" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a target="_blank" href="https://en-gb.facebook.com/">
+                        <i class="fa fa-facebook fa-icon" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>               
+            </ul>
+        </div>            
+    </div>          
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
