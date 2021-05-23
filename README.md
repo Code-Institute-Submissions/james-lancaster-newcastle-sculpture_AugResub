@@ -7,6 +7,7 @@ Cities and towns the world over are adorned with public sculpture. Much of the t
 As far as I can tell, there are few websites devoted to an individual city or town’s sculpture (Lichfield’s The city of sculpture, (http://www.thecityofsculpture.co.uk/) is a rare example), but I’ve often thought I’d like to be able quickly to find out about an individual city’s public art, and I think there’s enough in Newcastle-upon-Tyne for it to be worthwhile providing a guide for others. In the fullness of time such a guide could provide guided walks and could expand to Northumbria and other cities in the North East. For now, a Newcastle guide might be of interest to visitors and tourists, locals, culture vultures and local history geeks, and those looking for a walk on a Sunday afternoon.
 
 NOTE: This project has not gone as planned. Apart from where identified in the text, I have left both the UX section below and the Figma wireframes unchanged from before I created a Gitpod workspace (apart from URL updates etc) as it may help explain why this was. I  will draw attention to the problems where necessary.
+In an attempt to correct errors, I made a fresh repository, 210518_quiz-test. I copied files from this to newcastle-sculpture on 24 May. Unfortunately, this means that there is no record of commits and pushes, although that is part of my normal everyday working.
 
 # UX
 
