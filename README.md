@@ -189,6 +189,10 @@ Writing and correcting these modals through error after error has been quite a l
 **sendEmail.js**
    <img src="assets/images/jshint-sendemail-2021-05-24.png">
 
+4. Lighthouse
+* [Desktop](https://gist.github.com/james-lancaster/9f6cb511ffe244a89cdc00f04492ba96)
+* [Mobile](https://gist.github.com/james-lancaster/2676e268ec2d07fa6102a25d94cd0e1b)
+
 ## Testing user stories
 1. As a first time visitor, I would like to
 * I easily understand the main purpose of the site and be reassured that I have found a site which may have what I am looking for
