@@ -161,13 +161,33 @@ Writing and correcting these modals through error after error has been quite a l
 
 # Testing
 ## Validators
-1. W3c Markup Validator – results
+1. W3C Markup Validator – results
 * Note – an error is identified on the use of a div within a button in the navbar. This is taken from a code sample at [Codeply]( https://www.codeply.com/p/sW0Dx7GUNr/bootstrap-hamburger-X) – it seems to work.
 * Note – two errors identified on contact.html regarding the JavaScript attribute. I have left this as it’s the format used in the teaching material.
+
+**index.html**
+   <img src="assets/images/w3c-index-2021-05-24.png">
+
+**locations.html**
+   <img src="assets/images/w3c-locations-2021-05-24.png">
+
+**quiz.html**
+   <img src="assets/images/w3c-quiz-2021-05-24.png">
+
+**contact.html**
+   <img src="assets/images/w3c-contact-2021-05-24.png">
+
 2. W3C CSS Validator – results
+
+**style.css**
+   <img src="assets/images/w3c-style-2021-05-24.png">
+
 3. JSHint
+**quiz.js*s**
+   <img src="assets/images/jshint-quiz-2021-05-24.png">
 
-
+**sendEmail.js**
+   <img src="assets/images/jshint-sendemail-2021-05-24.png">
 
 ## Testing user stories
 1. As a first time visitor, I would like to
@@ -269,5 +289,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ## Acknowledgements
 * Many thanks to the Tutor Assistance team not just for patiently helping to solve problems but for teaching me quite a bit about JavaScript.
+* Thanks also to Gerry McBride for a helpful mentor session.
 
 James Lancaster 24 May  2021
