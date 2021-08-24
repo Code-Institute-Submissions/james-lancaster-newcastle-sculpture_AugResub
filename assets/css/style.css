@@ -77,6 +77,10 @@ accessed via Stack Overflow https://stackoverflow.com/questions/28247310/bootstr
 /* ---------- 2.5	Locations ----- */
 /* ---------- 2.6	Quiz ----- */
 /* ---------- 2.7	Contact ----- */
+#container-form {
+    padding-top: 20px;
+}
+
 #form-layout {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -84,7 +88,7 @@ accessed via Stack Overflow https://stackoverflow.com/questions/28247310/bootstr
     border: 3px solid #407472;
 }
 
-#form-btn {
+.form-btn {
     margin: 0 auto;
     text-align: center;
     background-color: #407472; 

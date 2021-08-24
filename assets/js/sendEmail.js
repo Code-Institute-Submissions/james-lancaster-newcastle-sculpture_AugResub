@@ -14,3 +14,9 @@ function sendMail(contactForm) {
     );
     return false;  // To block from loading a new page
 }
+
+// Modal 
+$("#btnThanksModal").click(function(){
+    if ($(this).hasClass('emailSent')) {
+      $('#thanksModal').modal();
+  });
