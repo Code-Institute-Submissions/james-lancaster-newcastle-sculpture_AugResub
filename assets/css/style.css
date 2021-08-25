@@ -85,7 +85,7 @@ accessed via Stack Overflow https://stackoverflow.com/questions/28247310/bootstr
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
-    border: 3px solid #677473;
+/*    border: 3px solid #677473; */
 }
 
 .form-btn {
@@ -186,8 +186,8 @@ https://bootstrapcreative.com/can-adjust-text-size-bootstrap-responsive-design/ 
     margin-bottom: 0;
 }
 
-.ns-hg-02 {
-    padding-top: 2px;
+.image-container {
+    padding-top: 137px;
 }
 
 .ns-hg-05 {
