@@ -7,16 +7,16 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            // Modal to acknowledge receipt of message
+            $(".acknowledgement-message").text("Thanks for being in touch " + contactForm.firstname.value);
+            $("#acknowledgementModal").modal("toggle");
+            $("#close-btn").click(function(){
+                location.reload();
+            });
         },
         function(error) {
-            console.log("FAILURE", error);
-        }
+            console.log("FAILED", error);
+        },
     );
-    return false;  // To block from loading a new page
+    return false; // To block from loading a new page
 }
-
-// Modal 
-$("#btnThanksModal").click(function(){
-    if ($(this).hasClass('emailSent')) {
-      $('#thanksModal').modal();
-  });
