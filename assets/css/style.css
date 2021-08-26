@@ -277,6 +277,11 @@ footer {
     background-color: #677473; 
 }
 
+/*
+.modal {
+    z-index: 0;
+}
+*/
 /* ----- 3	   IMAGES ----- */
 /* ----- 3.1   Quiz images ----- */
 .img-responsive-q01 {
