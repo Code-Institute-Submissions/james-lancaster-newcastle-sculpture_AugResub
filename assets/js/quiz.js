@@ -3,7 +3,7 @@
 */
 
 // When the user clicks on the "view image" button in question 4
-$("#qzm01").click(function(){
+  $("#qzm01").click(function(){
     $("#quizModal01").modal();
 /*    $('quizModal01').appendTo("body");*/
 });
@@ -23,9 +23,9 @@ $("#qzm04").click(function(){
 // Opens a modal to give a response when the user has selected an answer to any of the questions
 $(".btnQ1").click(function(){
     if ($(this).hasClass('correct')) {
-      $('#q1Correct').modal();
+      $('#q1True').modal();
     } else if ($(this).hasClass('incorrect')) {
-      $('#q1Incorrect').modal();
+      $('#q1False').modal();
     }
   });
 
