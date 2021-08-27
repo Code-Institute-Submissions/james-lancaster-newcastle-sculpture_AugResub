@@ -45,7 +45,7 @@
         </nav>     
     </header>
     <!-- section: quiz form -->
-    <section class="container-fluid image-container box-q01">
+    <section class="container-fluid image-container box-q01 sculpture_quiz">
         <div class="row">
             <div class="col s12 m8">
                 <h2>So, what do you know about Newcastle sculpture?</h2>
@@ -61,20 +61,21 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <img src="assets/images/arnatt-articulated-opposites.jpg" alt="Raymond Arnatt, Articulated Opposites" class="img-q01 img-responsive-q01 img-fluid-q01">
+                        <img src="assets/images/arnatt-articulated-opposites.jpg" 
+                            alt="Raymond Arnatt, Articulated Opposites" class="img-q01 img-responsive-q01 img-fluid-q01">
                     </div>
                     <div class="col-12 col-lg-6"> 
                         <div class="row box-q02" id="question-one">
                             <p class="question-text">Which inventor and invention does this commemorate?</p>
                             <div>
-                                <p><button class="btn-q btnQ1 false">Thomas Edison, inventor of the electric light 
-                                    bulb (or was it Swan?)</button></p>
-                                <p><button class="btn-q btnQ1 true">Joseph Swan, inventor of the electric light 
-                                    bulb (or was it Edison?)</button></p>
-                                <p><button class="btn-q btnQ1 false">Gladstone Adams of Whitley Bay, (locally 
-                                    claimed) inventor of the windscreen wiper</button></p>
-                                <p><button class="btn-q btnQ1 false">Mary Anderson of Birmingham, Alabama, 
-                                    inventor of the windscreen wiper</button></p>
+                                <p><button name="q1Sum" class="btn-q btnQ1 sumQ incorrect">Thomas Edison, inventor of 
+                                    the electric light bulb (or was it Swan?)</button></p>
+                                <p><button name="q1Sum" class="btn-q btnQ1 sumQ correct ok">Joseph Swan, inventor of the 
+                                    electric light bulb (or was it Edison?)</button></p>
+                                <p><button name="q1Sum" class="btn-q btnQ1 sumQ incorrect">Gladstone Adams of Whitley 
+                                    Bay, (locally claimed) inventor of the windscreen wiper</button></p>
+                                <p><button name="q1Sum" class="btn-q btnQ1 sumQ incorrect">Mary Anderson of Birmingham, 
+                                    Alabama, inventor of the windscreen wiper</button></p>
                             </div>
                         </div>
                     </div>
@@ -94,10 +95,10 @@
                         <div class="row box-q02" id="question-two">
                             <p class="question-text">Who is the sculptor of these figures?</p>
                             <div>
-                                <p><button class="btn-q btnQ2 true">Nigel Boonham</button></p>
-                                <p><button class="btn-q btnQ2 false">Damien Hirst</button></p>
-                                <p><button class="btn-q btnQ2 false">Barbara Hepworth</button></p>
-                                <p><button class="btn-q btnQ2 false">William Goscombe John</button></p>
+                                <p><button name="q2Sum" class="btn-q btnQ2 sumQ correct ok">Nigel Boonham</button></p>
+                                <p><button name="q2Sum" class="btn-q btnQ2 sumQ incorrect">Damien Hirst</button></p>
+                                <p><button name="q2Sum" class="btn-q btnQ2 sumQ incorrect">Barbara Hepworth</button></p>
+                                <p><button name="q2Sum" class="btn-q btnQ2 sumQ incorrect">William Goscombe John</button></p>
                             </div>
                         </div>
                     </div>
@@ -126,10 +127,10 @@
                         <div class="row box-q02" id="question-three">
                             <p class="question-text">Which river god is celebrated here?</p>
                             <div>
-                                <p><button class="btn-q btnQ1 false">River Tweed</button></p>
-                                <p><button class="btn-q btnQ1 false">River Thames</button></p>
-                                <p><button class="btn-q btnQ1 true">River Tyne</button></p>
-                                <p><button class="btn-q btnQ1 false">River Trent</button></p>
+                                <p><button name="q3Sum" class="btn-q btnQ1 sumQ incorrect">River Tweed</button></p>
+                                <p><button name="q3Sum" class="btn-q btnQ1 sumQ incorrect">River Thames</button></p>
+                                <p><button name="q3Sum" class="btn-q btnQ1 sumQ correct ok">River Tyne</button></p>
+                                <p><button name="q3Sum" class="btn-q btnQ1 sumQ incorrect">River Trent</button></p>
                             </div>
                         </div>
                     </div>
@@ -137,7 +138,7 @@
             </div>
         </div>
         <!-- Question 4: question -->
-        <div class="row">
+        <div class="row underline">
             <div class="col">
                 <div class="row">
                     <div class="col s12 m8">
@@ -145,17 +146,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src="assets/images/wallace-river-god.jpg" alt="Andre Wallace, River God" 
-                            class="img-q01">
-                    </div>
                     <div class="col-12 col-lg-6"> 
                         <div class="row box-q02" id="question-four">
                             <p class="question-text">And who is <em>this</em> river god calling to?</p>
                             <div class="container">
                                 <div class="row align-items-start q04-row">
                                     <div class="col">
-                                        <button class="Button btn-q btnQ4 btn-qa false"><span 
+                                        <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa incorrect"><span 
                                             class="Button-wrapper">
                                         <span>Christine Hill, Black rhinoceros</span></span></button>
                                     </div>
@@ -166,7 +163,7 @@
                                 </div>
                                 <div class="row align-items-start q04-row">
                                     <div class="col">
-                                        <button class="Button btn-q btnQ4 btn-qa false"><span 
+                                        <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa incorrect"><span 
                                             class="Button-wrapper">
                                         <span>Andre Wallace, Man with pigeons</span></span></button>
                                     </div>
@@ -177,7 +174,7 @@
                                 </div>
                                 <div class="row align-items-start q04-row">
                                     <div class="col">
-                                        <button class="Button btn-q btnQ4 btn-qa false">
+                                        <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa incorrect">
                                         <span class="Button-wrapper"><span>Tom Maley, Alan Shearer</span></span></button>
                                     </div>
                                     <div class="col view-btn">
@@ -187,7 +184,7 @@
                                 </div>   
                                 <div class="row align-items-start q04-row">
                                     <div class="col">
-                                        <button class="Button btn-q btnQ4 btn-qa true"><span class="Button-wrapper">
+                                        <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa correct ok"><span class="Button-wrapper">
                                         <span>Andre Wallace, Siren</span></span></button>
                                     </div>
                                     <div class="col view-btn">
@@ -277,16 +274,28 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="assets/images/wallace-river-god.jpg" alt="Andre Wallace, River God" 
+                            class="img-q01">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="submit-btn">
+                    <input type="button" class="btn btn-secondary center-block btn-center" 
+                    id="quiz-submit" value="Phew, I'm finished!" onclick="check();">                    
                 </div>
             </div>
         </div>
         <!-- Quiz answers modals -->
         <!-- Question 1 answer modal -->
-        <div class="modal fade" id="q1True" tabindex="-1" aria-labelledby="q1TrueLabel" aria-hidden="true">
+        <div class="modal fade" id="q1Correct" tabindex="-1" aria-labelledby="q1CorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q1TrueLabel">
+                        <div class="modal-title" id="q1CorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span></button>
                         </div>
@@ -302,11 +311,11 @@
                 </div>
             </div>
         </div>      
-        <div class="modal fade" id="q1False" tabindex="-1" aria-labelledby="q1FalseLabel" aria-hidden="true">
+        <div class="modal fade" id="q1Incorrect" tabindex="-1" aria-labelledby="q1IncorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q1FalseLabel">
+                        <div class="modal-title" id="q1IncorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span></button>
                         </div>
@@ -323,11 +332,11 @@
             </div>
         </div>
         <!-- Question 2 answer modal -->
-        <div class="modal fade" id="q2True" tabindex="-1" aria-labelledby="q2TrueLabel" aria-hidden="true">
+        <div class="modal fade" id="q2Correct" tabindex="-1" aria-labelledby="q2Correct" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q2TrueLabel">
+                        <div class="modal-title" id="q2CorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span></button>
                         </div>
@@ -342,11 +351,11 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="q2False" tabindex="-1" aria-labelledby="q2FalseLabel" aria-hidden="true">
+        <div class="modal fade" id="q2Incorrect" tabindex="-1" aria-labelledby="q2IncorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q2FalseLabel">
+                        <div class="modal-title" id="q2IncorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                     </div>
@@ -362,11 +371,11 @@
             </div>
         </div>
         <!-- Question 3 answer modal -->
-        <div class="modal fade" id="q3True" tabindex="-1" aria-labelledby="q3TrueLabel" aria-hidden="true">
+        <div class="modal fade" id="q3Correct" tabindex="-1" aria-labelledby="q3CorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q3TrueLabel">
+                        <div class="modal-title" id="q3CorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span></button>
                         </div>
@@ -380,13 +389,12 @@
                     </div>
                 </div>
             </div>
-            </div>
         </div>      
-        <div class="modal fade" id="q3False" tabindex="-1" aria-labelledby="q3FalseLabel" aria-hidden="true">
+        <div class="modal fade" id="q3Incorrect" tabindex="-1" aria-labelledby="q3IncorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q3FalseLabel">
+                        <div class="modal-title" id="q3IncorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                     </div>
@@ -401,11 +409,11 @@
             </div>
         </div>
         <!-- Question 4 answer modal -->
-        <div class="modal fade" id="q4True" tabindex="-1" aria-labelledby="q4TrueLabel" aria-hidden="true">
+        <div class="modal fade" id="q4Correct" tabindex="-1" aria-labelledby="q4CorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q4TrueLabel">
+                        <div class="modal-title" id="q4CorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                         <div class="modal-body">
@@ -418,11 +426,11 @@
                 </div>
             </div>
         </div>      
-        <div class="modal fade" id="q4False" tabindex="-1" aria-labelledby="q4FalseLabel" aria-hidden="true">
+        <div class="modal fade" id="q4Incorrect" tabindex="-1" aria-labelledby="q4IncorrectLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="q4FalseLabel">
+                        <div class="modal-title" id="q4IncorrectLabel">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                     </div>
@@ -434,6 +442,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div id="after_submit">
+                <p id="message"></p>
+                <p id="number_correct"></p>
+            </div>        
         </div>
     </section>
     <!-- section: footer -->

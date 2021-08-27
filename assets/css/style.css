@@ -219,7 +219,7 @@ footer {
 
 .underline {
     border-bottom: 3px solid #310949;
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 20px;
 }
 /* ----- 2.6.2 Quiz buttons: ----- */
@@ -253,7 +253,6 @@ footer {
     color: #a3a0a0;
     background-color: #3a0949;
     text-align: left;
-    
 }
 
 .view-btn {
@@ -277,6 +276,52 @@ footer {
     background-color: #677473; 
 }
 
+.right {
+    color: #000000;
+    background-color: #89a87c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    text-align: left;
+    border-radius: 4px;
+    min-width: 450px;
+    max-width: 450px;
+    pointer-events: none;
+}
+
+.wrong {
+    color: #000000;
+    background-color: #bd4040;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    text-align: left;
+    border-radius: 4px;
+    min-width: 450px;
+    max-width: 450px;
+    pointer-events: none;
+}
+
+#quiz-submit {
+    padding: 25px;
+    margin: 15px;
+    border-color: #ecdfeb;
+    background-color: #ecdfeb;
+    font-family: 'Work Sans', sans-serif;
+    color: #43257F;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase; 
+}
+
+.submit-btn {
+    background-color: white;
+    color: #43257F;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase; 
+}
 /*
 .modal {
     z-index: 0;
