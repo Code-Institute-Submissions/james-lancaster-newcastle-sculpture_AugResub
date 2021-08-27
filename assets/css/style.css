@@ -169,7 +169,6 @@ footer {
     background-color: #677473;
 }
 
-
 .social-links {
     padding-bottom: 15px;
     text-align: center;
@@ -302,7 +301,7 @@ footer {
     pointer-events: none;
 }
 
-#quiz-submit {
+#quizSubmit {
     padding: 25px;
     margin: 15px;
     border-color: #ecdfeb;
@@ -322,6 +321,37 @@ footer {
     font-weight: 900;
     text-transform: uppercase; 
 }
+
+#after_submit {
+    visibility: hidden;
+    padding: 25px;
+    margin: 15px;
+    border-color: #ecdfeb;
+    background-color: #ecdfeb;
+    font-family: 'Work Sans', sans-serif;
+    color: #43257F;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*
+.like-submit-btn {
+    background-color: white;
+    color: #43257F;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.like-quiz-submit {
+    padding: 25px;
+    margin: 15px;
+    border-color: #ecdfeb;
+    background-color: #ecdfeb;
+    font-family: 'Work Sans', sans-serif;
+
+}
+*/
 /*
 .modal {
     z-index: 0;

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="icon" type="image/png" href="https://james-lancaster.github.io/newcastle-sculptures/favicon.png">
+        <link rel="icon" type="image/png" href="https://james-lancaster.github.io/newcastle-sculpture/favicon.png">
         <title>Quiztest</title>
         <script src="https://kit.fontawesome.com/a32fb896d7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar fixed-top menu-bar top-color navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html">
-                <img src=assets/images/river-god-logo.jpg height="50" alt="Logo - the river god"></a>
+                <img src="assets/images/river-god-logo.jpg" height="65" alt="Logo - the river god"></a>
                 <span><h1 id="logo-text">Newcastle sculptures</h1></span>
             <div class="navbar-collapse collapse" id="navbarNav">
                 <ul class="navbar-nav heading-font ml-auto" id="menu-hover">
@@ -45,7 +45,7 @@
         </nav>     
     </header>
     <!-- section: quiz form -->
-    <section class="container-fluid image-container box-q01 sculpture_quiz">
+    <section class="container-fluid image-container box-q01" id="sculptureQuiz">
         <div class="row">
             <div class="col s12 m8">
                 <h2>So, what do you know about Newcastle sculpture?</h2>
@@ -281,11 +281,12 @@
                 </div>
             </div>
         </div>
+        <!-- Submit -->
         <div class="row">
             <div class="col s12 m8">
                 <div class="submit-btn">
-                    <input type="button" class="btn btn-secondary center-block btn-center" 
-                    id="quiz-submit" value="Phew, I'm finished!" onclick="check();">                    
+                    <button type="submit" class="btn btn-secondary center-block btn-center" 
+                    id="quizSubmit" value="reset" onclick="check();">Submit</button>
                 </div>
             </div>
         </div>
@@ -443,11 +444,14 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div id="after_submit">
-                <p id="message"></p>
-                <p id="number_correct"></p>
-            </div>        
+            <div class="col s12 m8">
+                <div id="after_submit" class="like-submit-btn">
+                    <p id="message" class="center-block btn-center like-quiz-submit"></p>
+                    <p id="number_score"></p>
+                </div>  
+            </div>      
         </div>
     </section>
     <!-- section: footer -->

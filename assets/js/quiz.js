@@ -1,4 +1,4 @@
-// When the user clicks on the "view image" button in question 4
+// Opens a modal when the user clicks on the "view image" button in question 4
 $("#qzm01").click(function(){
     $("#quizModal01").modal();
 /*    $('quizModal01').appendTo("body");*/
@@ -58,7 +58,7 @@ $('.sumQ').click(function() {
    }
   });
 
-  //Fades out other quiz answers when one is selected 
+//Fades out other quiz answers when one is selected 
 $('.btn-q').click(function(){
   $(this).siblings().hide
 });
@@ -66,22 +66,50 @@ $('.btn-q').click(function(){
 //Increases the score by one if the answer is correct
 var score = 0
 function check() {
-  var correct = 0;
-  $(".q1Sum").click(function(){
+    $(".q1Sum").click(function(){
       ($(this).hasClass('correct'))
-      correct++;
-  })
-  $(".q2Sum").click(function(){
-      ($(this).hasClass('correct'))
-      correct++;
-  })
-  $(".q3Sum").click(function(){
-      ($(this).hasClass('correct'))
-      correct++;
-  })
-  $(".q4Sum").click(function(){
-      ($(this).hasClass('correct'))
-      correct++;
-  })
+      score++;
+    })
+    $(".q2Sum").click(function(){
+        ($(this).hasClass('correct'))
+        score++;
+    })
+    $(".q3Sum").click(function(){
+        ($(this).hasClass('correct'))
+        score++;
+    })
+    $(".q4Sum").click(function(){
+        ($(this).hasClass('correct'))
+        score++;
+    })
+    console.log(score)
+    //Refreshes the page so the user can start again
+    // sculptureQuiz.getElementById("quizSubmit").reload();
+    // document.getElementById("quizSubmit").reload();
 };
 
+// Returns a message saying how many answers were correct
+    var messages = [
+        "Great, you’re a sculpture expert! Why not lead a tour?", 
+        "Very good, you nearly know it all",
+        "Not bad, a good basis to get going",
+        "Okay, starting with a clean slate is good - it’ll be all new and exciting for you",
+    ];
+
+    var range;
+    if (score < 1) {
+    range = 3;
+    }
+    if (score > 0 && correct < 3) {
+        range = 2;
+    }
+    if (score > 2 && correct < 4) {
+        range = 1;
+    }
+    if (score > 3) {
+        range = 0;
+    };
+
+document.getElementById("after_submit").style.visibility = "visible";
+document.getElementById("message").innerHTML = messages[range];
+document.getElementById("number_score").innerHTML = "You got " + score + " score.";
