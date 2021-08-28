@@ -51,10 +51,10 @@ $(".btnQ4").click(function(){
 
 // Changes background color depending on answer by adding appropriate class
 $('.sumQ').click(function() {
-   if ($(this).hasClass('correct')) {
-      $(this).addClass('right');
+   if ($(sumQ).hasClass('correct')) {
+      $(sumQ).addClass('right');
    } else {
-      $(this).addClass('wrong');
+      $(sumQ).addClass('wrong');
    }
   });
 
@@ -65,28 +65,35 @@ $('.btn-q').click(function(){
 
 //Increases the score by one if the answer is correct
 var score = 0
-function check() {
-    $(".q1Sum").click(function(){
-      ($(this).hasClass('correct'))
-      score++;
-    })
+document.getElementsByClassName("sumQ")
+    if ((this).hasClass('correct')){
+        score++
+    } else {if ((this).hasClass('incorrect'))
+        score;
+    }
+console.log(score)
+
     $(".q2Sum").click(function(){
         ($(this).hasClass('correct'))
         score++;
     })
+
     $(".q3Sum").click(function(){
         ($(this).hasClass('correct'))
         score++;
     })
+
     $(".q4Sum").click(function(){
         ($(this).hasClass('correct'))
         score++;
-    })
-    console.log(score)
-    //Refreshes the page so the user can start again
-    // sculptureQuiz.getElementById("quizSubmit").reload();
-    // document.getElementById("quizSubmit").reload();
-};
+    });
+
+console.log(score)
+
+//Refreshes the page so the user can start again
+// sculptureQuiz.getElementById("quizSubmit").reload();
+// document.getElementById("quizSubmit").reload();
+// };
 
 // Returns a message saying how many answers were correct
     var messages = [
@@ -111,5 +118,5 @@ function check() {
     };
 
 document.getElementById("after_submit").style.visibility = "visible";
+document.getElementById("number_score").innerHTML = "You scored " + score;
 document.getElementById("message").innerHTML = messages[range];
-document.getElementById("number_score").innerHTML = "You got " + score + " score.";
