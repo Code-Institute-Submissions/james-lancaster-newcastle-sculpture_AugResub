@@ -49,51 +49,28 @@ $(".btnQ4").click(function(){
     }
 });
 
-// Changes background color depending on answer by adding appropriate class
-$('.sumQ').click(function() {
-   if ($(sumQ).hasClass('correct')) {
-      $(sumQ).addClass('right');
-   } else {
-      $(sumQ).addClass('wrong');
-   }
-  });
-
-//Fades out other quiz answers when one is selected 
-$('.btn-q').click(function(){
-  $(this).siblings().hide
-});
-
 //Increases the score by one if the answer is correct
-var score = 0
-document.getElementsByClassName("sumQ")
-    if ((this).hasClass('correct')){
-        score++
-    } else {if ((this).hasClass('incorrect'))
-        score;
-    }
-console.log(score)
+function check(){
+    var q1N = document.quizSculpture.q1N.value;
+    console.log(q1N)
+    var q2N = document.quizSculpture.q2N.value;
+    var q3N = document.quizSculpture.q3N.value;
+    var q4N = document.quizSculpture.q4N.value;
+    var score = 0;
+        if (q1N == "swan"){
+            score++;
+        }
+        console.log(score)
 
-    $(".q2Sum").click(function(){
-        ($(this).hasClass('correct'))
-        score++;
-    })
-
-    $(".q3Sum").click(function(){
-        ($(this).hasClass('correct'))
-        score++;
-    })
-
-    $(".q4Sum").click(function(){
-        ($(this).hasClass('correct'))
-        score++;
-    });
-
-console.log(score)
-
-//Refreshes the page so the user can start again
-// sculptureQuiz.getElementById("quizSubmit").reload();
-// document.getElementById("quizSubmit").reload();
-// };
+        if (q2N == "boonham"){
+            score++;
+        }
+        if (q3N == "tyne"){
+            score++;
+        }
+        if (q4N == "siren"){
+            score++;
+        }
 
 // Returns a message saying how many answers were correct
     var messages = [
@@ -107,16 +84,34 @@ console.log(score)
     if (score < 1) {
     range = 3;
     }
-    if (score > 0 && correct < 3) {
+    if (score > 0 && score < 3) {
         range = 2;
     }
-    if (score > 2 && correct < 4) {
+    if (score > 2 && score < 4) {
         range = 1;
     }
     if (score > 3) {
         range = 0;
-    };
+    }
 
 document.getElementById("after_submit").style.visibility = "visible";
 document.getElementById("number_score").innerHTML = "You scored " + score;
 document.getElementById("message").innerHTML = messages[range];
+document.getElementById("show_answers").style.visibility = "visible";
+}
+
+// Changes background color depending on answer by adding appropriate class
+/*$('.sumQ').click(function() {
+    if ($(this).hasClass('correct')) {
+       $(this).addClass('right');
+    } else {
+       $(this).addClass('wrong');
+    }
+   });
+*/ 
+ //Fades out other quiz answers when one is selected
+ /*
+ $('.btn-q').click(function(){
+   $(this).siblings().hide
+ });
+ */

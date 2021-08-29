@@ -41,7 +41,7 @@
         </button>
         </nav>     
     </header>
-    <!-- section: quiz form -->
+    <!-- section: quiz  -->
     <section class="container-fluid image-container box-q01" id="sculptureQuiz">
         <div class="row">
             <div class="col s12 m8">
@@ -50,9 +50,9 @@
         </div>
         <!-- quiz form -->
         <form id="quizSculpture" name="quizSculpture">
-            <!-- Question 1: question-->
+            <!-- question 1: question-->
             <div class="row underline">
-                <div class="col">
+                <div class="col">                
                     <div class="row">
                         <div class="col s12 m8">
                             <p class="question-no">QUESTION ONE</p>
@@ -67,21 +67,33 @@
                             <div class="row box-q02" id="question-one">
                                 <p class="question-text">Which inventor and invention does this commemorate?</p>
                                 <div>
-                                    <p><button name="q1Sum" class="btn-q btnQ1 sumQ incorrect">Thomas Edison, inventor of 
-                                        the electric light bulb (or was it Swan?)</button></p>
-                                    <p><button name="q1Sum" class="btn-q btnQ1 sumQ correct ok">Joseph Swan, inventor of the 
-                                        electric light bulb (or was it Edison?)</button></p>
-                                    <p><button name="q1Sum" class="btn-q btnQ1 sumQ incorrect">Gladstone Adams of Whitley 
-                                        Bay, (locally claimed) inventor of the windscreen wiper</button></p>
-                                    <p><button name="q1Sum" class="btn-q btnQ1 sumQ incorrect">Mary Anderson of Birmingham, 
-                                        Alabama, inventor of the windscreen wiper</button></p>
+                                    <div class="btn-q">
+                                        <input id="edison" type="radio" name="q1N" class="q1C sumQ incorrect" 
+                                            value="edison"><label for="edison">Thomas Edison, inventor of the electric light bulb 
+                                            (or was it Swan?)</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="swan" type="radio" name="q1N" class="q1C sumQ correct ok" 
+                                            value="swan"><label for="swan">Joseph Swan, inventor of the electric light bulb 
+                                            (or was it Edison?)</label>
+                                    </div>
+                                     <div class="btn-q">
+                                        <input type="radio" id="adams" name="q1N" class="q1C sumQ incorrect" 
+                                            value="adams"><label for="adams">Gladstone Adams of Whitley Bay, (locally claimed) inventor of 
+                                            the windscreen wiper</label>
+                                     </div>
+                                    <div class="btn-q">
+                                        <input type="radio" id="anderson" name="q1N" class="q1C sumQ incorrect" 
+                                            value="anderson"><label for="anderson">Mary Anderson of Birmingham, Alabama, inventor of the windscreen 
+                                            wiper</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Question 2: question -->
+            <!-- question 2: question -->
             <div class="row underline">
                 <div class="col">
                     <div class="row">
@@ -94,10 +106,18 @@
                             <div class="row box-q02" id="question-two">
                                 <p class="question-text">Who is the sculptor of these figures?</p>
                                 <div>
-                                    <p><button name="q2Sum" class="btn-q btnQ2 sumQ correct ok">Nigel Boonham</button></p>
-                                    <p><button name="q2Sum" class="btn-q btnQ2 sumQ incorrect">Damien Hirst</button></p>
-                                    <p><button name="q2Sum" class="btn-q btnQ2 sumQ incorrect">Barbara Hepworth</button></p>
-                                    <p><button name="q2Sum" class="btn-q btnQ2 sumQ incorrect">William Goscombe John</button></p>
+                                    <div class="btn-q">
+                                        <input id="boonham" type="radio" name="q2N" class="q2C sumQ incorrect" value="boonham"><label for="boonham">Nigel Boonham</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="hirst" type="radio" name="q2N" class="q2C sumQ correct ok" value="hirst"><label for="hirst">Damian Hirst</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="hepworth" type="radio" name="q2N" class="q2C sumQ incorrect" value="hepworth"><label for="hepworth">Barbara Hepworth</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="john" type="radio" name="q2N" class="q2C sumQ incorrect" value="john"><label for="john">William Goscombe John</label><br>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Question 3: question -->
+            <!-- question 3: question -->
             <div class="row underline">
                 <div class="col">
                     <div class="row">
@@ -126,10 +146,18 @@
                             <div class="row box-q02" id="question-three">
                                 <p class="question-text">Which river god is celebrated here?</p>
                                 <div>
-                                    <p><button name="q3Sum" class="btn-q btnQ1 sumQ incorrect">River Tweed</button></p>
-                                    <p><button name="q3Sum" class="btn-q btnQ1 sumQ incorrect">River Thames</button></p>
-                                    <p><button name="q3Sum" class="btn-q btnQ1 sumQ correct ok">River Tyne</button></p>
-                                    <p><button name="q3Sum" class="btn-q btnQ1 sumQ incorrect">River Trent</button></p>
+                                    <div class="btn-q">
+                                        <input id="tweed" type="radio" name="q3N" class="q3C sumQ incorrect" value="tweed"><label for="tweed">River Tweed</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="thames" type="radio" name="q3N" class="q3C sumQ incorrect" value="thames"><label for="thames">River Thames</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="tyne" type="radio" name="q3N" class="q3C sumQ incorrect" value="tyne"><label for="tyne">River Tyne</label>
+                                    </div>
+                                    <div class="btn-q">
+                                        <input id="trent" type="radio" name="q3N" class="q3C sumQ incorrect" value="trent"><label for="trent">River Trent</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +179,9 @@
                                 <div class="container">
                                     <div class="row align-items-start q04-row">
                                         <div class="col">
-                                            <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa incorrect"><span 
-                                                class="Button-wrapper">
-                                            <span>Christine Hill, Black rhinoceros</span></span></button>
+                                            <div class="btn-q">
+                                                <input id="rhino" type="radio" name="q4N" class=#q4C sumQ incorrect" value="rhino"><label for="rhino">Christine Hill, Black rhinoceros</label>
+                                            </div>
                                         </div>
                                         <div class="col view-btn">
                                             <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm01" 
@@ -162,9 +190,9 @@
                                     </div>
                                     <div class="row align-items-start q04-row">
                                         <div class="col">
-                                            <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa incorrect"><span 
-                                                class="Button-wrapper">
-                                            <span>Andre Wallace, Man with pigeons</span></span></button>
+                                            <div class="btn-q">
+                                                <input id="pigeons" type="radio" name="q4N" class="q4C sumQ incorrect" value="pigeons"><label for="pigeons">Andre Wallace, Man with pigeons</label>
+                                            </div>
                                         </div>
                                         <div class="col view-btn">
                                             <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm02" 
@@ -173,8 +201,9 @@
                                     </div>
                                     <div class="row align-items-start q04-row">
                                         <div class="col">
-                                            <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa incorrect">
-                                            <span class="Button-wrapper"><span>Tom Maley, Alan Shearer</span></span></button>
+                                            <div class="btn-q">
+                                                <input id="shearer" type="radio" name="q4N" class="q4C sumQ incorrect" value="shearer"><label for="shearer">Tom Maley, Alan Shearer</label>
+                                            </div>
                                         </div>
                                         <div class="col view-btn">
                                             <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm03" 
@@ -183,8 +212,9 @@
                                     </div>   
                                     <div class="row align-items-start q04-row">
                                         <div class="col">
-                                            <button name="q4Sum" class="Button btn-q btnQ4 sumQ btn-qa correct ok"><span class="Button-wrapper">
-                                            <span>Andre Wallace, Siren</span></span></button>
+                                            <div class="btn-q">
+                                                <input id="siren" type="radio" name="q4N" class="q4C sumQ incorrect" value="siren"><label for="siren">Andre Wallace, Siren</label>
+                                            </div>
                                         </div>
                                         <div class="col view-btn">
                                             <button type="button" class="btn btn-primary modal-sm q04-btn-col" id="qzm04" 
@@ -192,105 +222,104 @@
                                         </div>
                                     </div>                        
                                 </div>
-                            </div>
+                            </div>     
                         </div>
-                    </div>
-                    <!-- Question 4: image modals-->
-                    <div class="modal fade" id="quizModal01" tabindex="-1" 
-                        aria-labelledby="quizModal01Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title" id="quizModal01Label">
-                                        <img src="assets/images/hill-black-rhinoceros_1024_a.jpg" 
-                                            alt="Christine Hill, Black rhinoceros" class="img-responsive" 
-                                            width="400">
-                                        <h5 class="modal-title ModalLabel">Christine Hill, Black rhinoceros</h5>
-                                    </div>   
-                                    <button type="button" class="close" data-dismiss="modal" 
-                                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-                                </div>
-                            </div>
+                        <div class="col-12 col-lg-6">
+                            <img src="assets/images/wallace-river-god.jpg" alt="Andre Wallace, River God" 
+                                class="img-q01">
                         </div>
-                    </div>
-                    <div class="modal fade" id="quizModal02" tabindex="-1" 
-                    aria-labelledby="quizModal02Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title" id="quizModal02Label">
-                                        <img src="assets/images/wallace-man-pigeons.jpg" 
-                                        alt="Andre Wallace, Man with pigeons" class="img-responsive"
-                                        width="400">
-                                        <h5 class="modal-title ModalLabel">Andre Wallace, Man with pigeons</h5>
-                                    </div>
-                                    <button type="button" class="close" data-dismiss="modal" 
-                                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>                                
-                    <div class="modal fade" id="quizModal03" tabindex="-1" aria-labelledby="quizModal03Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title" id="quizModal03Label">
-                                        <img src="assets/images/maley-shearer_1024_a.jpg" 
-                                            alt="Tom Maley, Alan Shearer" class="img-responsive" 
-                                            width="400">
-                                        <h5 class="modal-title ModalLabel">Tom Maley, Alan Shearer</h5>
-                                    </div>
-                                    <button type="button" class="close" data-dismiss="modal" 
-                                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                    <div class="modal fade" id="quizModal04" tabindex="-1" aria-labelledby="quizModal04Label" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title" id="quizModal04Label">
-                                        <img src="assets/images/wallace-siren.jpg" 
-                                            alt="Andre Wallace, Siren" class="img-responsive" 
-                                            width="400">
-                                        <h5 class="modal-title ModalLabel">Andre Wallace, Siren</h5>
-                                    </div>
-                                    <button type="button" class="close" data-dismiss="modal" 
-                                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <img src="assets/images/wallace-river-god.jpg" alt="Andre Wallace, River God" 
-                            class="img-q01">
                     </div>
                 </div>
             </div>
+            <!-- Submit -->
             <div class="row">
                 <div class="col s12 m8">
                     <div class="submit-btn">
-                        <button type="submit" class="btn btn-secondary center-block btn-center" 
-                        id="quizSubmit" value="reset">Submit</button>
+                        <input type="button" class="btn btn-secondary center-block btn-center"
+                        id="quizSubmit" value="Submit" onclick="check();">
                     </div>
                 </div>
             </div>
         </form>
-        <!-- Submit -->
-
+        <!-- Question 4: image modals-->
+        <div class="modal fade" id="quizModal01" tabindex="-1" 
+            aria-labelledby="quizModal01Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="quizModal01Label">
+                            <img src="assets/images/hill-black-rhinoceros_1024_a.jpg" 
+                                alt="Christine Hill, Black rhinoceros" class="img-responsive" 
+                                width="400">
+                            <h5 class="modal-title ModalLabel">Christine Hill, Black rhinoceros</h5>
+                        </div>   
+                        <button type="button" class="close" data-dismiss="modal" 
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="quizModal02" tabindex="-1" 
+            aria-labelledby="quizModal02Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="quizModal02Label">
+                            <img src="assets/images/wallace-man-pigeons.jpg" 
+                            alt="Andre Wallace, Man with pigeons" class="img-responsive"
+                            width="400">
+                            <h5 class="modal-title ModalLabel">Andre Wallace, Man with pigeons</h5>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" 
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                    </div>
+                </div>
+            </div>
+        </div>                                
+        <div class="modal fade" id="quizModal03" tabindex="-1" aria-labelledby="quizModal03Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="quizModal03Label">
+                            <img src="assets/images/maley-shearer_1024_a.jpg" 
+                                alt="Tom Maley, Alan Shearer" class="img-responsive" 
+                                width="400">
+                            <h5 class="modal-title ModalLabel">Tom Maley, Alan Shearer</h5>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" 
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                    </div>
+                </div>
+            </div>
+        </div>                   
+        <div class="modal fade" id="quizModal04" tabindex="-1" aria-labelledby="quizModal04Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="quizModal04Label">
+                            <img src="assets/images/wallace-siren.jpg" 
+                                alt="Andre Wallace, Siren" class="img-responsive" 
+                                width="400">
+                            <h5 class="modal-title ModalLabel">Andre Wallace, Siren</h5>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" 
+                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Quiz answers modals -->
         <!-- Question 1 answer modal -->
         <div class="modal fade" id="q1Correct" tabindex="-1" aria-labelledby="q1CorrectLabel" aria-hidden="true">
@@ -445,13 +474,18 @@
                 </div>
             </div>
         </div>
-
+        <!-- show results -->
         <div class="row">
             <div class="col s12 m8">
                 <div id="after_submit" class="like-submit-btn">
                     <p id="number_score"></p>
                     <p id="message" class="center-block btn-center like-quiz-submit"></p>
-
+                    <p id="show_answers" class="center-block btn-center like-quiz-submit">
+                        No 1. This statue celebrates Newcastle's Joseph Swan. Why you'd put a fine statue like Raymond Arnatt’s Articulated Opposites of 1969 in the middle of a traffic roundabout is another matter. But despite that, it has an optimistic 60s feel.<br>
+                        No 2. Nigel Boonham is the sculptor. Cardinal Basil Hume at the Cathedral is in a wonderful setting, but Martin Luther King is bit hidden in a quad at Newcastle University.<br>
+                        No 3. It's the River Tyne. David Wynne's Tyne god on the Council House is a pretty impressive figure, isn't he, although his arm looks dislocated.<br>
+                        No 4. He's calling to his companion siren (4). Andre Wallace's statues are on the Quayside near Millenium Bridge.
+                    </p>
                 </div>  
             </div>      
         </div>

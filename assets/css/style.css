@@ -230,8 +230,9 @@ footer {
     border: none;
     text-align: left;
     border-radius: 4px;
-    min-width: 450px;
-    max-width: 450px;
+    min-width: 475px;
+    max-width: 475px;
+    margin-bottom: 10px;
 }
 
 .btn-q:hover{
@@ -311,6 +312,14 @@ footer {
     font-size: 24px;
     font-weight: 900;
     text-transform: uppercase; 
+}
+
+#quizSubmit:hover{
+    color: #a3a0a0;
+    background-color: #3a0949;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .submit-btn {
