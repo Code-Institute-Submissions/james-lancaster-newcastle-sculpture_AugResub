@@ -52,7 +52,7 @@ $(".btnQ4").click(function(){
 //Increases the score by one if the answer is correct
 function check(){
     var q1N = document.quizSculpture.q1N.value;
-    console.log(q1N)
+    // console.log(q1N);
     var q2N = document.quizSculpture.q2N.value;
     var q3N = document.quizSculpture.q3N.value;
     var q4N = document.quizSculpture.q4N.value;
@@ -60,7 +60,8 @@ function check(){
         if (q1N == "swan"){
             score++;
         }
-        console.log(score)
+
+        // console.log(score);
 
         if (q2N == "boonham"){
             score++;

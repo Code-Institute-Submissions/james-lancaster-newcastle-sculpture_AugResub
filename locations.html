@@ -15,29 +15,26 @@
     <nav class="navbar fixed-top menu-bar top-color navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/river-god-logo.jpg" height="50" alt="Logo - the river god"></a>
-            <span><h1 id="logo-text">Newcastle sculptures</h1></span>
-        <div class="navbar-collapse collapse" id="navbarNav">
-            <ul class="navbar-nav heading-font ml-auto" id="menu-hover">
-                <li class="nav-item mr-2 active">
-                    <a class="nav-link menu-item" href="index.html">Home</a>
+            <span class="logo-text logo-header">Newcastle sculptures</span>
+        <button class="navbar-toggler menu-burger-icon collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 heading-font mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item mr-2">
+                <li class="nav-item active">
                     <a class="nav-link menu-item" href="locations.html">Locations<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mr-2">
+                <li class="nav-item active">
                     <a class="nav-link menu-item" href="quiz.html">Quiz</a>
                 </li>
-                <li class="nav-item mr-2">
+                <li class="nav-item active">
                     <a class="nav-link menu-item" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
-        <button class="navbar-toggler-right menu-burger-icon collapsed" type="button" data-toggle="collapse" 
-        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <!-- <div class="close-icon"><i class="fas fa-times"></i>
-        </div> -->
-    </button>
     </nav>     
 </header>
     <!-- section: image -->
@@ -52,14 +49,32 @@
         </div>
     </section>
     <!-- section: map -->
-    <section class="container-fluid image-container box-q01" id="sculptureQuiz">
+    <section class="container-fluid box-q01" id="map-container">
         <div class="row">
             <div class="col s12 m8">
                 <!-- div element for the map -->
                 <div id="map"></div>
             </div>
         </div>
+        <!-- Basis of code taken from Google Maps documentation -->
+        <div class="row" id="map-info">
+            <div class="col">
+                <p>Raymond Arnott, <a href="https://www.google.com/maps/search/?api=1&query=54.971281%2C-1.608609">Articulated opposites</a>
+                <p>Nigel Boonham, <a href="https://www.google.com/maps/search/?api=1&query=54.969014%2C-1.618857">Cardinal Basil Hume</a></p>
+                <p>Nigel Boonham, <a href="https://www.google.com/maps/search/?api=1&query=54.979351%2C-1.616164">Martin Luther King</a></p>
+                <p>Sean Henry, <a href="https://www.google.com/maps/search/?api=1&query=54.969531%2C-1.616541">Man with potential selves</a>
+                <p>William Goscombe John, <a href="https://www.google.com/maps/search/?api=1&query=54.978567%2C-1.612749">The response</a></p>
+                <p>Christine Hill, <a href="https://www.google.com/maps/search/?api=1&query=54.980153%2C-1.612609">Black rhinoceros</a></p>
+                <p>Tom Maley, <a href="https://www.google.com/maps/search/?api=1&query=54.974594%2C-1.620827">Alan Shearer</a></p>
+                <p>Susanna Robinson, <a href="https://www.google.com/maps/search/?api=1&query=54.974866%2C-1.619762">Wor Jackie</a></p>
+                <p>Andre Wallace, <a href="https://www.google.com/maps/search/?api=1&query=54.970338%2C-1.600581">River god</a></p>
+                <p>Andre Wallace, <a href="https://www.google.com/maps/search/?api=1&query=54.975083%2C-1.613727">Man with pigeons</a></p>
+                <p>Andre Wallace, <a href="https://www.google.com/maps/search/?api=1&query=54.970509%2C-1.601313">Siren</a></p>
+                <p>David Wynne, <a href="https://www.google.com/maps/search/?api=1&query=54.978992%2C-1.612048">River God Tyne</a></p>
+            </div>
+        </div>
     </section>
+
     <!-- section: footer -->
     <footer class="container-fluid">
         <div class="row footer-color"> 
@@ -99,7 +114,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="assets/js/locations.js"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATCfUajM_jw9ZtNSq-oROdF0jNEk5772I&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpug3Y7RPDN-4xJhTJ8XtUasMXvrbaSDo&callback=initMap&libraries=&v=weekly" async></script>
 
 </body>
 </html>
