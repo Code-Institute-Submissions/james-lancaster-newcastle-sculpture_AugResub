@@ -6,7 +6,7 @@ Cities and towns the world over are adorned with public sculpture. Much of the t
 
 As far as I can tell, there are few websites devoted to an individual city or town’s sculpture (Lichfield’s [The city of sculpture] (http://www.thecityofsculpture.co.uk/) is a rare example), but I’ve often thought I’d like to be able quickly to find out about an individual city’s public art, and I think there’s enough in Newcastle-upon-Tyne for it to be worthwhile providing a guide for others. In the fullness of time such a guide could provide guided walks and could expand to Northumbria and other cities in the North East. For now, a Newcastle guide might be of interest to visitors and tourists, locals, culture vultures and local history geeks, and those looking for a walk on a Sunday afternoon.
 
-NOTE: This is the first resubmission of a previously failed project. I will address some of the issues where appropriate in this README.
+NOTE: This is the first resubmission of a previously failed project.
 
 Deployed GitHub
 https://james-lancaster.github.io/newcastle-sculpture/index.html
