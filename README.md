@@ -286,7 +286,7 @@ Guidance was from the Code Institute lessons on Google Maps and from the [Google
 * wallace-man-pigeons: I could find no accreditation
 * wynne-river-god-tyne: Civic Centre, Newcastle Upon Tyne. cc-by-sa/2.0 - © wfmillar - geograph.org.uk/p/739095 (https://www.geograph.org.uk/photo/739095)
 * Other photos mine
-2. Much useful information in Usherwood P, Beach J, Morris C. Public sculpture of North-East England. Liverpool University Press 2000 (not online!).
+2. Much useful information in Usherwood P, Beach J, Morris C. Public sculpture of North-East England. Liverpool University Press 2000 (not online).
 
 ## Acknowledgements
 * Many thanks to Seun Owonikoko for support and encouragement
