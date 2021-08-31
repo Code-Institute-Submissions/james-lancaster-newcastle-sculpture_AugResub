@@ -2,7 +2,7 @@
 function initMap() {
     // The location of Newcastle cit centre (Grey's Monument)
     var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 13,
         center: { lat: 54.973848, lng: -1.613146 }
     });
 

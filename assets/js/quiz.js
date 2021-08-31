@@ -17,6 +17,8 @@ $("#qzm04").click(function(){
 });
 
 // Opens a modal to give a response when the user has selected an answer to any of the questions
+// - no longer in use
+/*
 $(".btnQ1").click(function(){
     if ($(this).hasClass('correct')) {
         $('#q1Correct').modal();
@@ -48,7 +50,10 @@ $(".btnQ4").click(function(){
         $('#q4Incorrect').modal();
     }
 });
+*/
 
+// This code based on code in Briggs K. Javascript tutorial: make a quiz. 
+// mrteacherkevin 17 Oct 2016. https://www.youtube.com/watch?v=C7NsIRhoWuE
 //Increases the score by one if the answer is correct
 function check(){
     var q1N = document.quizSculpture.q1N.value;
@@ -95,13 +100,15 @@ function check(){
         range = 0;
     }
 
+// Display the result and the correct answers 
 document.getElementById("after_submit").style.visibility = "visible";
 document.getElementById("number_score").innerHTML = "You scored " + score;
 document.getElementById("message").innerHTML = messages[range];
 document.getElementById("show_answers").style.visibility = "visible";
 }
 
-// Changes background color depending on answer by adding appropriate class
+
+// Changes background color depending on answer by adding appropriate class - no longer required
 /*$('.sumQ').click(function() {
     if ($(this).hasClass('correct')) {
        $(this).addClass('right');

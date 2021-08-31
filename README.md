@@ -9,13 +9,10 @@ As far as I can tell, there are few websites devoted to an individual city or to
 NOTE: This is the first resubmission of a previously failed project.
 
 Deployed GitHub
-https://james-lancaster.github.io/newcastle-sculpture/index.html
+https://james-lancaster.github.io/newcastle-sculpture
 
 GitHub
 https://github.com/james-lancaster/newcastle-sculpture
-
-Gitpod
-https://8000-gold-lobster-gtvm3qng.ws-eu16.gitpod.io/locations.html
 
 # User experience (UX)
 

@@ -37,26 +37,6 @@ font-family: 'Lato', sans-serif; */
     text-transform: uppercase;
 }
 
-/*
-.ns-hg-01-ft {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 65px;
-    color: black;
-    font-weight: 900;
-    padding-top: 30px;
-    margin-top: 50px;    
-    text-align: center;
-    text-transform: uppercase;
-}
-*/
-/*
-.navbar-title {
-}
-*/
-
-/* ----- 1.3   Footer ----- */
-/* ----- 1.4   Index ----- */
-/* ----- 1.5   Locations ----- */
 /* ----- 1.6   Quiz ----- */
 .question-no {
     color: #43257F;
@@ -77,17 +57,9 @@ font-family: 'Lato', sans-serif; */
 .txt-q01 {
     text-transform: uppercase;
 }
-/* ---------- 1.7   Contact ----- */
 
 /* ----- 2     LAYOUT ----- */
 /* ----- 2.1   General ----- */
-/*
-#btn-center {
-    margin: 0 auto;
-    text-align: center;
-}
-*/
-
 .ns-cb-01 {
     background-color: #BD0B0B;
     padding-left: 0;
@@ -144,8 +116,6 @@ accessed via Stack Overflow https://stackoverflow.com/questions/28247310/bootstr
     background-color: #ffffff; 
 }
 
-/* .mx-auto: 20px; */
-
 /* ----- 2.3   Footer ----- */
 .fa-icon {
     width: 35px;
@@ -192,7 +162,6 @@ nshg10
 
 /* ----- 2.5   Locations ----- */
 /* Set the size of the div element that contains the map */
-
 #map {
     min-height: 360px;
   }
@@ -218,14 +187,11 @@ nshg10
 /* ----- 2.6.1 Quiz layout ----- */
 .box-q01 {
     margin-top: 5px;
-    /* margin-left: 100px;*/
-    /* margin-right: 100px; */
     margin-bottom: 5px;
     text-align: center;
 }
 
 .box-q02 {
-    /* margin: 50px; */
     text-align: center;
     min-width: 475px;
     max-width: 475px;
@@ -244,7 +210,6 @@ nshg10
 
 .underline {
     border-bottom: 3px solid #310949;
-    /* padding: 20px; */
     margin-bottom: 20px;
 }
 /* ----- 2.6.2 Quiz buttons: ----- */
@@ -271,7 +236,6 @@ nshg10
 
 .box-q02 {
     padding: 20px;
-    /* margin-top: 20px; */
     margin-bottom: 20px;
 }
 
@@ -293,7 +257,6 @@ nshg10
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
-/*    border: 3px solid #677473; */
 }
 
 .form-btn {
@@ -369,24 +332,16 @@ nshg10
     font-weight: 700;
 }
 
-/*
-.like-submit-btn {
-    background-color: white;
-    color: #43257F;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-}
-
 .like-quiz-submit {
-    padding: 25px;
-    margin: 15px;
+    padding: 10px;
+    margin: 10px;
     border-color: #ecdfeb;
     background-color: #ecdfeb;
     font-family: 'Work Sans', sans-serif;
+    text-align: left;
 
 }
-*/
+
 /*
 .modal {
     z-index: 0;
